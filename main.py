@@ -1,22 +1,22 @@
 import io_utilities
 import mock_data
+import api_utilities
 
 def play():
-    main()
+    session_token = api_utilities.get_session_token()
+    main(session_token)
     while True:
         if io_utilities.play_again():
-            main()
+            main(session_token)
         else:
             break
 
-def main():
+def main(session_token):
     settings = io_utilities.setup_quiz()
     num_questions = settings['number_of_questions']
     difficulty = settings['difficulty']
-    #request data from the api here
-    #below is the mock data returned
-    questions = mock_data.generate_data()
-    print(questions)
+
+    questions = api_utilities.get_questions(num_questions, difficulty, session_token)
     correct_answers = 0
     for i in questions:
        correct_answers += io_utilities.ask_question(i)
