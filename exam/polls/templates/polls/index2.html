@@ -1,0 +1,12 @@
+<h2>Welcome to the online random exam generator!</h2>
+<form action="questions/" method="post">
+    {% csrf_token %}
+    <label for="number_of_questions">How many questions would you like to answer? </label>
+        <input id="number_of_questions" type="number" min="1" max="50" step="1" value="1" name="number_of_questions" >
+        <label for="difficulty">How difficult would you like the questions to be?</label>
+        <input type="radio" name="difficulty" value="easy" checked> Easy<br>
+          <input type="radio" name="difficulty" value="medium"> Medium<br>
+            <input type="radio" name="difficulty" value="hard"> Hard<br>
+            <input type="radio" name="difficulty" value="any"> Any
+        <input type="submit" value="OK">
+</form>

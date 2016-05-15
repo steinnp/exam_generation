@@ -4,12 +4,13 @@ import json
 
 #There might be some problems with unicode strings vs. ascii strings here
 #polls the api for random questions and returns a list of question dictionaries
-def get_questions(num_questions, difficulty, token):
+def get_questions(num_questions, difficulty, token = None):
     http_link = 'http://www.opentdb.com/api.php?amount=' + str(num_questions)
     http_link += '&type=multiple'
     if difficulty != 'any':
         http_link += '&difficulty=' + difficulty
-    http_link += '&token=' + token
+    if token != None:
+        http_link += '&token=' + token
     request = json.loads(urllib.request.urlopen(http_link).read().decode())
     if request['response_code'] != 0:
         return None

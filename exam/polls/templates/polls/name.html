@@ -1,0 +1,11 @@
+<h2>now in name</h2>
+<form action="/your_name/" method="post">
+    {% csrf_token %}
+    {{form}}
+    {% for field in form %}
+        <div class="fieldWrapper">
+            {{ field }}
+        </div>
+    {% endfor %}
+<input type="submit" value="Submit" />
+</form>
