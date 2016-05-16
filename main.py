@@ -3,8 +3,7 @@ import mock_data
 import api_utilities
 
 def play():
-    #session_token = api_utilities.get_session_token()
-    session_token = None
+    session_token = api_utilities.get_session_token()
     main(session_token)
     while True:
         if io_utilities.play_again():

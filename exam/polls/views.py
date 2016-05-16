@@ -3,14 +3,14 @@ from .api_utilities import get_questions, get_session_token
 from django.template import loader
 from django.http import HttpResponse
 from .forms import QuestionSettingsForm, QuestionForm
-import logging
 
-logger = logging.getLogger(__name__)
-
+# ask the user how many questions and of what difficulty he would like to be asked
 def index(request):
+    # initialize a session token for the user if it does not exist 
+    #to make sure he never gets the same
+    # question twice
     if 'session token' not in request.session:
         request.session['session token'] = get_session_token()
-    template = loader.get_template('polls/index2.html') 
     if request.method == 'POST':
         form = QuestionSettingsForm(request.POST)
         # check whether it's valid:
@@ -20,18 +20,25 @@ def index(request):
         form = QuestionSettingsForm()
     return render(request, 'polls/index2.html', {'form': form})
 
+# Ask the user the questions he would like to answer
 def questions(request):
-    template = loader.get_template('polls/name.html')
+    # initialize a session token for the user if it does not exist 
+    # to make sure he never gets the same
+    # question twice
     if 'session token' not in request.session:
         request.session['session token'] = get_session_token()
+    # get a list of questions from an online api
     question_list = get_questions(request.POST['number_of_questions'],request.POST['difficulty'], request.session['session token'])
     form = []
+    # display relevant data to the user
     for i in question_list:
         request.session[i['correct answer']] = i['correct answer']
         form.append((i['question'], i['answers']))
+    # set the total number of questions the user will be asked in the session dict
     request.session['total questions'] = request.POST['number_of_questions']
     return render(request, 'polls/name.html', {'form': form})
 
+# displays how well the user did in the quiz he just took
 def answers(request):
     total = 0
     if 'total questions' in request.session:
@@ -48,6 +55,8 @@ def answers(request):
         request.session['total_correct'] = correct
     else:
         request.session['total_correct'] = int(request.session['total_correct']) + int(correct)
-
-
-    return render(request, 'polls/answers.html',{'correct': str(correct), 'total': str(total), 'form': request.POST, 'total_correct': request.session['total_correct'], 'all_answers': request.session['all_answers']})
+    return render(request, 'polls/answers.html',{
+                  'correct': str(correct), 
+                  'total': str(total), 'form': request.POST, 
+                  'total_correct': request.session['total_correct'], 
+                  'all_answers': request.session['all_answers']})
