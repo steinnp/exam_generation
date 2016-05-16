@@ -11,7 +11,7 @@ def get_questions(num_questions, difficulty, token = None):
         http_link += '&difficulty=' + difficulty
     if token != None:
         http_link += '&token=' + token
-    request = json.loads(urllib.request.urlopen(http_link).read().decode())
+    request = json.loads(urllib.request.urlopen(http_link).read().decode('utf-8'))
     if request['response_code'] != 0:
         return None
     request = request['results']
@@ -36,5 +36,6 @@ def get_session_token():
     http_link = 'http://www.opentdb.com/api_token.php?command=request'
     token = json.loads(urllib.request.urlopen(http_link).read().decode())
     return token['token']
-     
-#get_session_token()
+    
+
+print(get_questions("5", "easy"))

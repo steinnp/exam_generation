@@ -1829,3 +1829,1205 @@ NameError: name 'api_utilities' is not defined
 [16/May/2016 18:13:17] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'esb3w5zikkdwubri54ca8bbtgf8z60a3' AND "django_session"."expire_date" > '2016-05-16 18:13:17.425099'); args=('esb3w5zikkdwubri54ca8bbtgf8z60a3', '2016-05-16 18:13:17.425099')
 [16/May/2016 18:13:17] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
 [16/May/2016 18:13:17] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'NDg5ZTY4MDg3ZDJjMTI3NDgwNTFmODczNjU2MTcwODJjOGRjODgxZTp7IkFsZXhhbmRlciBGbGVtbWluZyI6IkFsZXhhbmRlciBGbGVtbWluZyIsIkhhbG8iOiJIYWxvIiwiVGhlIEhhcnZhcmQgYXJjaGl0ZWN0dXJlIGZvciBtaWNyby1jb250cm9sbGVycyBhZGRlZCB3aGljaCBhZGRpdGlvbmFsIGJ1cz8iOiJJbnN0cnVjdGlvbiIsIlRoZSBUaGluZyI6IlRoZSBUaGluZyIsIkVhZ2xlIjoiRWFnbGUiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiV2hhdCB3YXMgdGhlIGxhc3QgQXBoZXggVHdpbiBhbGJ1bSByZWxlYXNlZCBiZWZvcmUgaGlzIGRlY2FkZS1sb25nIGhpYXR1cz8iOiJEcnVrcXMiLCJCcnVjZSBMZWUiOiJCcnVjZSBMZWUiLCJUb21teSBMZWUgSm9uZXMiOiJUb21teSBMZWUgSm9uZXMiLCJCcm93biI6IkJyb3duIiwiRm91ciI6IkZvdXIiLCJDbGV2ZWxhbmQgQnJvd24iOiJDbGV2ZWxhbmQgQnJvd24iLCJXaGljaCBpcyB0aGUgY2hlbWljYWwgbmFtZSBvZiBIMk8/IjoiRGloeWRyb2dlbiBNb25veGlkZSIsIlZhbmVzc2EgS2Vuc2luZ3RvbiI6IlZhbmVzc2EgS2Vuc2luZ3RvbiIsIlN0ZXZlbiBTcGllbGJlcmciOiJTdGV2ZW4gU3BpZWxiZXJnIiwiJiMwMzk7Rm9yJiMwMzk7IGxvb3BzIjoiJiMwMzk7Rm9yJiMwMzk7IGxvb3BzIiwiRml2ZSI6IkZpdmUiLCJEYXZpZCBEdWNob3ZueSI6IkRhdmlkIER1Y2hvdm55IiwiQ2xpbnQgRWFzdHdvb2QiOiJDbGludCBFYXN0d29vZCIsIkNlbnRyYWwgUHJvY2Vzc2luZyBVbml0IjoiQ2VudHJhbCBQcm9jZXNzaW5nIFVuaXQiLCJXaG8gcGxheWVkIFN0YW4mIzAzOTtzIGRvZyBpbiB0aGUgU291dGggUGFyayBlcGlzb2RlICZxdW90O0JpZyBHYXkgQWwmIzAzOTtzIEJpZyBHYXkgQm9hdCBSaWRlJnF1b3Q7PyI6Ikdlb3JnZSBDbG9vbmV5IiwiRGVtb2xpdGlvbiI6IkRlbW9saXRpb24iLCJKb2hubnkgQ2FzaCI6IkpvaG5ueSBDYXNoIiwiVGhvbWFzICZhbXA7IE1hcnRoYSI6IlRob21hcyAmYW1wOyBNYXJ0aGEiLCJXaGF0IHdhcyB0aGUgbmFtZSBvZiB0aGUgaGVybyBpbiB0aGUgODBzIGFuaW1hdGVkIHZpZGVvIGdhbWUgJiMwMzk7RHJhZ29uJiMwMzk7cyBMYWlyJiMwMzk7PyI6IkRpcmsgdGhlIERhcmluZyIsIldoYXQgd2FzIHRoZSBuYW1lIG9mIHRoZSBzZWN1cml0eSB2dWxuZXJhYmlsaXR5IGZvdW5kIGluIEJhc2ggaW4gMjAxND8iOiJTaGVsbHNob2NrIiwiTWFyc2giOiJNYXJzaCIsIkpha2FydGEiOiJKYWthcnRhIiwiMTk4NCI6IjE5ODQiLCJNb3J0YWwgS29tYmF0IjoiTW9ydGFsIEtvbWJhdCIsIkhhcnJ5IFBvdHRlciI6IkhhcnJ5IFBvdHRlciIsIldoaWNoIHdhcyB0aGUgZmlyc3Qgb2YgQWxmcmVkIEhpdGNoY29jayYjMDM5O3MgbW92aWVzIHRvIGJlIGZpbG1lZCBpbiBjb2xvdXI/IjoiUm9wZSIsIlNwYWluIHdhcyBmb3JtZWQgaW4gMTQ2OSB3aXRoIHRoZSBtYXJyaWFnZSBvZiBJc2FiZWxsYSBJIG9mIENhc3RpbGUgYW5kIEZlcmRpbmFuZCBJSSBvZiB3aGF0IG90aGVyIEliZXJpYW4ga2luZ2RvbT8iOiJBcmFnb24iLCJBcHBsZSI6IkFwcGxlIiwiV2hhdCBpcyB0aGUgZGVyaXZhdGl2ZSBvZiBBY2NlbGVyYXRpb24gd2l0aCByZXNwZWN0IHRvIHRpbWU/IjoiSmVyayIsIlNjcmVlY2giOiJTY3JlZWNoIiwiQmx1ZSBXaGFsZSI6IkJsdWUgV2hhbGUiLCIxOTk3IjoiMTk5NyIsIkphY3F1ZXMiOiJKYWNxdWVzIiwiVGhlIE5hdXRpbHVzIjoiVGhlIE5hdXRpbHVzIiwiSW4gdGhlIGdhbWUgJnF1b3Q7VGhlIFNpbXMmcXVvdDssIGhvdyBtYW55IFNpbW9sZW9ucyBkb2VzIGVhY2ggZmFtaWx5IHN0YXJ0IHdpdGg/IjoiMjAsMDAwIiwiU291bHMgIjoiU291bHMgIiwiTW92aW5nIFBpY3R1cmUiOiJNb3ZpbmcgUGljdHVyZSIsIld1YmJhLWx1YmJhLWR1Yi1kdWIhICI6Ild1YmJhLWx1YmJhLWR1Yi1kdWIhICIsIkxlb25hcmRvIGRhIFZpbmNpIjoiTGVvbmFyZG8gZGEgVmluY2kiLCJJdGFseSI6Ikl0YWx5IiwiU2FzaGEiOiJTYXNoYSIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsInRvdGFsIHF1ZXN0aW9ucyI6IjUiLCJIVEMiOiJIVEMiLCJMYW1iZGEiOiJMYW1iZGEiLCJBaXIiOiJBaXIiLCJKLksgUm93bGluZyI6IkouSyBSb3dsaW5nIiwiSW4gdGhlIHllYXIgMTkwMCwgd2hhdCB3ZXJlIHRoZSBtb3N0IHBvcHVsYXIgZmlyc3QgbmFtZXMgZ2l2ZW4gdG8gYm95IGFuZCBnaXJsIGJhYmllcyBib3JuIGluIHRoZSBVbml0ZWQgU3RhdGVzPyI6IkpvaG4gYW5kIE1hcnkiLCJTdW5kYW5jZSI6IlN1bmRhbmNlIiwiTWljaGVsYW5nZWxvIjoiTWljaGVsYW5nZWxvIiwiQXZhdGFyIjoiQXZhdGFyIiwiSW4gdGhlIEhhcnJ5IFBvdHRlciB1bml2ZXJzZSwgd2hhdCBpcyBDb3JuZWxpdXMgRnVkZ2UmIzAzOTtzIG1pZGRsZSBuYW1lPyI6Ik9zd2FsZCIsIkJ1bGwiOiJCdWxsIiwiV2hhdCB3YXMgdGhlIG5hbWUgb2YgdGhlIEV0aGlvcGlhbiBXb2xmIGJlZm9yZSB0aGV5IGtuZXcgaXQgd2FzIHJlbGF0ZWQgdG8gd29sdmVzPyI6IlNpbWllbiBKYWNrZWwiLCJXYWx0ZXIgV2hpdGUiOiJXYWx0ZXIgV2hpdGUiLCJNYXJzIjoiTWFycyIsIkZpZ2FybyI6IkZpZ2FybyIsIkJhdG1hbiB2IFN1cGVybWFuOiBEYXduIG9mIEp1c3RpY2UiOiJCYXRtYW4gdiBTdXBlcm1hbjogRGF3biBvZiBKdXN0aWNlIiwiR2VuZXNpcyI6IkdlbmVzaXMiLCJzZXNzaW9uIHRva2VuIjoiMWUwMTg1NGM2NzU2ZGJmMzY2MjIzMTE5ZTZmMGQxZTkzNjFkMWIxZGU3YzQ5MDk1YzQ4MmRlMzE2MDkwMzg0MSIsIjEwMDEiOiIxMDAxIiwiRnJhbmtlbnN0ZWluIjoiRnJhbmtlbnN0ZWluIiwiSW4gdGhlIGJvb2sgJnF1b3Q7VGhlIE1hcnRpYW4mcXVvdDssIGhvdyBsb25nIHdhcyBNYXJrIFdhdG5leSB0cmFwcGVkIG9uIE1hcnMgKGluIFNvbHMpPyI6IjU0OSBEYXlzIiwiVG90byI6IlRvdG8iLCJXaG8gd3JvdGUgdGhlIG5vdmVsICZxdW90O01vYnktRGljayZxdW90Oz8iOiJIZXJtYW4gTWVsdmlsbGUiLCJWYWx2ZSI6IlZhbHZlIiwiQnVmZmFsbyBCaWxsIjoiQnVmZmFsbyBCaWxsIiwiUmFkYXIiOiJSYWRhciIsIldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgbGlxdWlkcyBpcyBsZWFzdCB2aXNjb3VzPyBBc3N1bWUgdGVtcGVyYXR1cmUgaXMgMjUmZGVnO0MuIjoiQWNldG9uZSIsIkFwb2xsbyAxMSI6IkFwb2xsbyAxMSIsIk9saXZlciBTdG9uZSI6Ik9saXZlciBTdG9uZSIsIlRhbG9zLCB0aGUgbXl0aGljYWwgZ2lhbnQgYnJvbnplIG1hbiwgd2FzIHRoZSBwcm90ZWN0b3Igb2Ygd2hpY2ggaXNsYW5kPyI6IkNyZXRlIiwiQm9zdG9uIFJlZCBTb3giOiJCb3N0b24gUmVkIFNveCIsIkVyaWMgQ2xhcHRvbiI6IkVyaWMgQ2xhcHRvbiIsIldpbHNvbiI6IldpbHNvbiIsIkxpb24iOiJMaW9uIiwiUmljaGFyZCBCcmFuc29uIjoiUmljaGFyZCBCcmFuc29uIiwiTi5XLkEiOiJOLlcuQSIsIkNhYmJhZ2UgUGF0Y2ggS2lkcyI6IkNhYmJhZ2UgUGF0Y2ggS2lkcyIsIlRoZSBzZWVkIGRyaWxsIHdhcyBpbnZlbnRlZCBieSB3aGljaCBCcml0aXNoIGludmVudG9yPyI6IkpldGhybyBUdWxsIiwiQmFtYmkiOiJCYW1iaSIsIkNhcmJvbiI6IkNhcmJvbiIsIldoYXQgaXMgY29uc2lkZXJlZCB0aGUgcmFyaXN0IGZvcm0gb2YgY29sb3IgYmxpbmRuZXNzPyI6IkJsdWUiLCJXaGF0IHRvb2wgbGVuZHMgaXQmIzAzOTtzIG5hbWUgdG8gYSBsYXN0LXN0b25lIGFkdmFudGFnZSBpbiBhbiBlbmQgaW4gQ3VybGluZz8iOiJIYW1tZXIiLCJDaGVldGFoIjoiQ2hlZXRhaCIsIkRydW1zIjoiRHJ1bXMiLCJDYW5hZGEiOiJDYW5hZGEiLCJEaWJibGUiOiJEaWJibGUiLCJEb25hbGQgVHJ1bXAiOiJEb25hbGQgVHJ1bXAiLCJIZyI6IkhnIiwiJlV1bWw7YmVyIFVwZGF0ZSI6IiZVdW1sO2JlciBVcGRhdGUiLCJBbGFkZGluIjoiQWxhZGRpbiIsIjMgUm90YXRpb25zIjoiMyBSb3RhdGlvbnMiLCJTaWx2ZXIiOiJTaWx2ZXIiLCJXaXRoIHdoaWNoIEdyZWVrIHBoaWxvc29waGVyIHdvdWxkIHlvdSBhc3NvY2lhdGUgdGhlIHBocmFzZSwgJnF1b3Q7SSBrbm93IHRoYXQgSSBrbm93IG5vdGhpbmcmcXVvdDs/IjoiU29jcmF0ZXMiLCJTY29vYmVydCI6IlNjb29iZXJ0IiwiV2hhdCB3YXMgdGhlIHB1bmlzaG1lbnQgZm9yIFN5c2lwaHVzJiMwMzk7cyBjcmFmdGluZXNzPyI6IkN1cnNlZCB0byByb2xsIGEgYm91bGRlciB1cCBhIGhpbGwgZm9yIGV0ZXJuaXR5LiIsIkZlbXVyIjoiRmVtdXIiLCJIb3JzZS1SaWRpbmciOiJIb3JzZS1SaWRpbmciLCJNdWx0aXBsYXllciBPbmxpbmUgQmF0dGxlIEFyZW5hIChNT0JBKSI6Ik11bHRpcGxheWVyIE9ubGluZSBCYXR0bGUgQXJlbmEgKE1PQkEpIiwiV2hhdCB0eXBlIG9mIGRvZyBpcyAmIzAzOTtIYW5kc29tZSBEYW4mIzAzOTssIHRoZSBtYXNjb3Qgb2YgWWFsZSBVbml2ZXJzaXR5PyI6IkJ1bGxkb2ciLCJFbGVjdHJvbmljIG11c2ljIHByb2R1Y2VyIEt5Z28mIzAzOTtzIHBvcHVsYXJpdHkgc2t5cm9ja2V0ZWQgYWZ0ZXIgYSBjZXJ0YWluIHJlbWl4LiBXaGljaCBzb25nIGRpZCBoZSByZW1peD8iOiJFZCBTaGVlcmFuIC0gSSBTZWUgRmlyZSIsIldoYXQgaXMgSGVybWlvbmUgR3JhbmdlciYjMDM5O3MgbWlkZGxlIG5hbWU/IjoiSmVhbiIsIkdMYURPUyI6IkdMYURPUyIsIlBhaW50ZXIgUGlldCBNb25kcmlhbiAoMTg3MiAtIDE5NDQpIHdhcyBhIHBhcnQgb2Ygd2hhdCBtb3ZlbWVudD8iOiJOZW9wbGFzdGljaXNtIiwiVGhlIERyYWdvbiBXYWdvbiI6IlRoZSBEcmFnb24gV2Fnb24iLCJGYXkgV3JheSI6IkZheSBXcmF5IiwiUHJpbmNlIjoiUHJpbmNlIiwiV2hhdCBpcyB0aGUgYXBwcm94aW1hdGUgdmFsdWUgb2YgbWF0aGVtYXRpY2FsIGNvbnN0YW50IGU/IjoiMi43MiIsIlZpb2xhIjoiVmlvbGEiLCJXaGVuIHdhcyB0aGUgZmlyc3QgQ2FsbCBvZiBEdXR5IHRpdGxlIHJlbGVhc2VkPyI6Ik9jdG9iZXIgMjl0aCwgMjAwMyIsIjEwMjQiOiIxMDI0IiwidG90YWxfY29ycmVjdCI6MSwiVGV0cmlzIjoiVGV0cmlzIiwiNjYiOiI2NiIsIlVtYSBUaHVybWFuIjoiVW1hIFRodXJtYW4iLCJNaWNyb3NvZnQiOiJNaWNyb3NvZnQiLCJXYWxlcyI6IldhbGVzIiwiUmFkIE1vYmlsZSI6IlJhZCBNb2JpbGUiLCI0MCI6IjQwIiwiTmVwYWwiOiJOZXBhbCIsIkkgYW0gaW4gZ3JlYXQgcGFpbiwgcGxlYXNlIGhlbHAgbWUuIjoiSSBhbSBpbiBncmVhdCBwYWluLCBwbGVhc2UgaGVscCBtZS4iLCJMaW5rIjoiTGluayIsIkRpZCBJIGV2ZXIgdGVsbCB5b3UgdGhlIGRlZmluaXRpb24gb2YgSW5zYW5pdHkgPyI6IkRpZCBJIGV2ZXIgdGVsbCB5b3UgdGhlIGRlZmluaXRpb24gb2YgSW5zYW5pdHkgPyIsIldoaWNoIG9mIHRoZXNlIFRyYWNrTWFuaWEgZW52aXJvbm1lbnRzIHdhcyBOT1QgaW4gdGhlIG9yaWdpbmFsIGdhbWU/IjoiQmF5IiwiV2hhdCBjb3VudHJ5IGlzIG5vdCBhIHBhcnQgb2YgU2NhbmRpbmF2aWE/IjoiRmlubGFuZCIsIlR1ZG9yIjoiVHVkb3IiLCJDaHJpcyBNZXR6ZW4iOiJDaHJpcyBNZXR6ZW4iLCJSYWRpdXMiOiJSYWRpdXMiLCJCcnVjZSBXYXluZSI6IkJydWNlIFdheW5lIiwiNi4wMjIgeCAxMCZzdXAyOyZzdXAzOyI6IjYuMDIyIHggMTAmc3VwMjsmc3VwMzsiLCJXaGF0IHRvd24gd2FzICZxdW90O1NwcmluZ2ZpZWxkJnF1b3Q7IGZyb20gJnF1b3Q7VGhlIFNpbXBzb25zJnF1b3Q7IG9yaWdpbmFsbHkgbmFtZWQgYWZ0ZXI/IjoiU3ByaW5nZmllbGQsIE9yZWdvbiIsIkpvZXkiOiJKb2V5IiwiMjAwNyI6IjIwMDciLCIxR0IiOiIxR0IiLCJhbGxfYW5zd2VycyI6NDEsIldoaWNoIGF1dGhvciBhbmQgcG9ldCBmYW1vdXNseSB3cm90ZSB0aGUgbGluZSwgJnF1b3Q7VGhlIGZlbWFsZSBvZiB0aGUgc3BlY2llcyBpcyBtb3JlIGRlYWRseSB0aGFuIHRoZSBtYWxlJnF1b3Q7PyI6IlJ1ZHlhcmQgS2lwbGluZyIsIk5pbmUiOiJOaW5lIiwiTWljaGFlbCBLZWF0b24iOiJNaWNoYWVsIEtlYXRvbiIsIldobyByZWNvcmRlZCB0aGUxOTc1IGFsYnVtICYjMDM5O0NhcHRhaW4gRmFudGFzdGljIGFuZCB0aGUgQnJvd24gRGlydCBDb3dib3kmIzAzOTs/IjoiRWx0b24gSm9obiIsIk9uIHdoaWNoIEJlYXRsZXMgYWxidW0gd291bGQgeW91IGZpbmQgdGhlIHNvbmcgJiMwMzk7RWxlYW5vciBSaWdieSYjMDM5Oz8iOiJSZXZvbHZlciIsIkxhYnJhZG9yIFJldHJpZXZlciI6IkxhYnJhZG9yIFJldHJpZXZlciJ9', "expire_date" = '2016-05-30 18:13:17.427574' WHERE "django_session"."session_key" = 'esb3w5zikkdwubri54ca8bbtgf8z60a3'; args=('NDg5ZTY4MDg3ZDJjMTI3NDgwNTFmODczNjU2MTcwODJjOGRjODgxZTp7IkFsZXhhbmRlciBGbGVtbWluZyI6IkFsZXhhbmRlciBGbGVtbWluZyIsIkhhbG8iOiJIYWxvIiwiVGhlIEhhcnZhcmQgYXJjaGl0ZWN0dXJlIGZvciBtaWNyby1jb250cm9sbGVycyBhZGRlZCB3aGljaCBhZGRpdGlvbmFsIGJ1cz8iOiJJbnN0cnVjdGlvbiIsIlRoZSBUaGluZyI6IlRoZSBUaGluZyIsIkVhZ2xlIjoiRWFnbGUiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiV2hhdCB3YXMgdGhlIGxhc3QgQXBoZXggVHdpbiBhbGJ1bSByZWxlYXNlZCBiZWZvcmUgaGlzIGRlY2FkZS1sb25nIGhpYXR1cz8iOiJEcnVrcXMiLCJCcnVjZSBMZWUiOiJCcnVjZSBMZWUiLCJUb21teSBMZWUgSm9uZXMiOiJUb21teSBMZWUgSm9uZXMiLCJCcm93biI6IkJyb3duIiwiRm91ciI6IkZvdXIiLCJDbGV2ZWxhbmQgQnJvd24iOiJDbGV2ZWxhbmQgQnJvd24iLCJXaGljaCBpcyB0aGUgY2hlbWljYWwgbmFtZSBvZiBIMk8/IjoiRGloeWRyb2dlbiBNb25veGlkZSIsIlZhbmVzc2EgS2Vuc2luZ3RvbiI6IlZhbmVzc2EgS2Vuc2luZ3RvbiIsIlN0ZXZlbiBTcGllbGJlcmciOiJTdGV2ZW4gU3BpZWxiZXJnIiwiJiMwMzk7Rm9yJiMwMzk7IGxvb3BzIjoiJiMwMzk7Rm9yJiMwMzk7IGxvb3BzIiwiRml2ZSI6IkZpdmUiLCJEYXZpZCBEdWNob3ZueSI6IkRhdmlkIER1Y2hvdm55IiwiQ2xpbnQgRWFzdHdvb2QiOiJDbGludCBFYXN0d29vZCIsIkNlbnRyYWwgUHJvY2Vzc2luZyBVbml0IjoiQ2VudHJhbCBQcm9jZXNzaW5nIFVuaXQiLCJXaG8gcGxheWVkIFN0YW4mIzAzOTtzIGRvZyBpbiB0aGUgU291dGggUGFyayBlcGlzb2RlICZxdW90O0JpZyBHYXkgQWwmIzAzOTtzIEJpZyBHYXkgQm9hdCBSaWRlJnF1b3Q7PyI6Ikdlb3JnZSBDbG9vbmV5IiwiRGVtb2xpdGlvbiI6IkRlbW9saXRpb24iLCJKb2hubnkgQ2FzaCI6IkpvaG5ueSBDYXNoIiwiVGhvbWFzICZhbXA7IE1hcnRoYSI6IlRob21hcyAmYW1wOyBNYXJ0aGEiLCJXaGF0IHdhcyB0aGUgbmFtZSBvZiB0aGUgaGVybyBpbiB0aGUgODBzIGFuaW1hdGVkIHZpZGVvIGdhbWUgJiMwMzk7RHJhZ29uJiMwMzk7cyBMYWlyJiMwMzk7PyI6IkRpcmsgdGhlIERhcmluZyIsIldoYXQgd2FzIHRoZSBuYW1lIG9mIHRoZSBzZWN1cml0eSB2dWxuZXJhYmlsaXR5IGZvdW5kIGluIEJhc2ggaW4gMjAxND8iOiJTaGVsbHNob2NrIiwiTWFyc2giOiJNYXJzaCIsIkpha2FydGEiOiJKYWthcnRhIiwiMTk4NCI6IjE5ODQiLCJNb3J0YWwgS29tYmF0IjoiTW9ydGFsIEtvbWJhdCIsIkhhcnJ5IFBvdHRlciI6IkhhcnJ5IFBvdHRlciIsIldoaWNoIHdhcyB0aGUgZmlyc3Qgb2YgQWxmcmVkIEhpdGNoY29jayYjMDM5O3MgbW92aWVzIHRvIGJlIGZpbG1lZCBpbiBjb2xvdXI/IjoiUm9wZSIsIlNwYWluIHdhcyBmb3JtZWQgaW4gMTQ2OSB3aXRoIHRoZSBtYXJyaWFnZSBvZiBJc2FiZWxsYSBJIG9mIENhc3RpbGUgYW5kIEZlcmRpbmFuZCBJSSBvZiB3aGF0IG90aGVyIEliZXJpYW4ga2luZ2RvbT8iOiJBcmFnb24iLCJBcHBsZSI6IkFwcGxlIiwiV2hhdCBpcyB0aGUgZGVyaXZhdGl2ZSBvZiBBY2NlbGVyYXRpb24gd2l0aCByZXNwZWN0IHRvIHRpbWU/IjoiSmVyayIsIlNjcmVlY2giOiJTY3JlZWNoIiwiQmx1ZSBXaGFsZSI6IkJsdWUgV2hhbGUiLCIxOTk3IjoiMTk5NyIsIkphY3F1ZXMiOiJKYWNxdWVzIiwiVGhlIE5hdXRpbHVzIjoiVGhlIE5hdXRpbHVzIiwiSW4gdGhlIGdhbWUgJnF1b3Q7VGhlIFNpbXMmcXVvdDssIGhvdyBtYW55IFNpbW9sZW9ucyBkb2VzIGVhY2ggZmFtaWx5IHN0YXJ0IHdpdGg/IjoiMjAsMDAwIiwiU291bHMgIjoiU291bHMgIiwiTW92aW5nIFBpY3R1cmUiOiJNb3ZpbmcgUGljdHVyZSIsIld1YmJhLWx1YmJhLWR1Yi1kdWIhICI6Ild1YmJhLWx1YmJhLWR1Yi1kdWIhICIsIkxlb25hcmRvIGRhIFZpbmNpIjoiTGVvbmFyZG8gZGEgVmluY2kiLCJJdGFseSI6Ikl0YWx5IiwiU2FzaGEiOiJTYXNoYSIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsInRvdGFsIHF1ZXN0aW9ucyI6IjUiLCJIVEMiOiJIVEMiLCJMYW1iZGEiOiJMYW1iZGEiLCJBaXIiOiJBaXIiLCJKLksgUm93bGluZyI6IkouSyBSb3dsaW5nIiwiSW4gdGhlIHllYXIgMTkwMCwgd2hhdCB3ZXJlIHRoZSBtb3N0IHBvcHVsYXIgZmlyc3QgbmFtZXMgZ2l2ZW4gdG8gYm95IGFuZCBnaXJsIGJhYmllcyBib3JuIGluIHRoZSBVbml0ZWQgU3RhdGVzPyI6IkpvaG4gYW5kIE1hcnkiLCJTdW5kYW5jZSI6IlN1bmRhbmNlIiwiTWljaGVsYW5nZWxvIjoiTWljaGVsYW5nZWxvIiwiQXZhdGFyIjoiQXZhdGFyIiwiSW4gdGhlIEhhcnJ5IFBvdHRlciB1bml2ZXJzZSwgd2hhdCBpcyBDb3JuZWxpdXMgRnVkZ2UmIzAzOTtzIG1pZGRsZSBuYW1lPyI6Ik9zd2FsZCIsIkJ1bGwiOiJCdWxsIiwiV2hhdCB3YXMgdGhlIG5hbWUgb2YgdGhlIEV0aGlvcGlhbiBXb2xmIGJlZm9yZSB0aGV5IGtuZXcgaXQgd2FzIHJlbGF0ZWQgdG8gd29sdmVzPyI6IlNpbWllbiBKYWNrZWwiLCJXYWx0ZXIgV2hpdGUiOiJXYWx0ZXIgV2hpdGUiLCJNYXJzIjoiTWFycyIsIkZpZ2FybyI6IkZpZ2FybyIsIkJhdG1hbiB2IFN1cGVybWFuOiBEYXduIG9mIEp1c3RpY2UiOiJCYXRtYW4gdiBTdXBlcm1hbjogRGF3biBvZiBKdXN0aWNlIiwiR2VuZXNpcyI6IkdlbmVzaXMiLCJzZXNzaW9uIHRva2VuIjoiMWUwMTg1NGM2NzU2ZGJmMzY2MjIzMTE5ZTZmMGQxZTkzNjFkMWIxZGU3YzQ5MDk1YzQ4MmRlMzE2MDkwMzg0MSIsIjEwMDEiOiIxMDAxIiwiRnJhbmtlbnN0ZWluIjoiRnJhbmtlbnN0ZWluIiwiSW4gdGhlIGJvb2sgJnF1b3Q7VGhlIE1hcnRpYW4mcXVvdDssIGhvdyBsb25nIHdhcyBNYXJrIFdhdG5leSB0cmFwcGVkIG9uIE1hcnMgKGluIFNvbHMpPyI6IjU0OSBEYXlzIiwiVG90byI6IlRvdG8iLCJXaG8gd3JvdGUgdGhlIG5vdmVsICZxdW90O01vYnktRGljayZxdW90Oz8iOiJIZXJtYW4gTWVsdmlsbGUiLCJWYWx2ZSI6IlZhbHZlIiwiQnVmZmFsbyBCaWxsIjoiQnVmZmFsbyBCaWxsIiwiUmFkYXIiOiJSYWRhciIsIldoaWNoIG9mIHRoZSBmb2xsb3dpbmcgbGlxdWlkcyBpcyBsZWFzdCB2aXNjb3VzPyBBc3N1bWUgdGVtcGVyYXR1cmUgaXMgMjUmZGVnO0MuIjoiQWNldG9uZSIsIkFwb2xsbyAxMSI6IkFwb2xsbyAxMSIsIk9saXZlciBTdG9uZSI6Ik9saXZlciBTdG9uZSIsIlRhbG9zLCB0aGUgbXl0aGljYWwgZ2lhbnQgYnJvbnplIG1hbiwgd2FzIHRoZSBwcm90ZWN0b3Igb2Ygd2hpY2ggaXNsYW5kPyI6IkNyZXRlIiwiQm9zdG9uIFJlZCBTb3giOiJCb3N0b24gUmVkIFNveCIsIkVyaWMgQ2xhcHRvbiI6IkVyaWMgQ2xhcHRvbiIsIldpbHNvbiI6IldpbHNvbiIsIkxpb24iOiJMaW9uIiwiUmljaGFyZCBCcmFuc29uIjoiUmljaGFyZCBCcmFuc29uIiwiTi5XLkEiOiJOLlcuQSIsIkNhYmJhZ2UgUGF0Y2ggS2lkcyI6IkNhYmJhZ2UgUGF0Y2ggS2lkcyIsIlRoZSBzZWVkIGRyaWxsIHdhcyBpbnZlbnRlZCBieSB3aGljaCBCcml0aXNoIGludmVudG9yPyI6IkpldGhybyBUdWxsIiwiQmFtYmkiOiJCYW1iaSIsIkNhcmJvbiI6IkNhcmJvbiIsIldoYXQgaXMgY29uc2lkZXJlZCB0aGUgcmFyaXN0IGZvcm0gb2YgY29sb3IgYmxpbmRuZXNzPyI6IkJsdWUiLCJXaGF0IHRvb2wgbGVuZHMgaXQmIzAzOTtzIG5hbWUgdG8gYSBsYXN0LXN0b25lIGFkdmFudGFnZSBpbiBhbiBlbmQgaW4gQ3VybGluZz8iOiJIYW1tZXIiLCJDaGVldGFoIjoiQ2hlZXRhaCIsIkRydW1zIjoiRHJ1bXMiLCJDYW5hZGEiOiJDYW5hZGEiLCJEaWJibGUiOiJEaWJibGUiLCJEb25hbGQgVHJ1bXAiOiJEb25hbGQgVHJ1bXAiLCJIZyI6IkhnIiwiJlV1bWw7YmVyIFVwZGF0ZSI6IiZVdW1sO2JlciBVcGRhdGUiLCJBbGFkZGluIjoiQWxhZGRpbiIsIjMgUm90YXRpb25zIjoiMyBSb3RhdGlvbnMiLCJTaWx2ZXIiOiJTaWx2ZXIiLCJXaXRoIHdoaWNoIEdyZWVrIHBoaWxvc29waGVyIHdvdWxkIHlvdSBhc3NvY2lhdGUgdGhlIHBocmFzZSwgJnF1b3Q7SSBrbm93IHRoYXQgSSBrbm93IG5vdGhpbmcmcXVvdDs/IjoiU29jcmF0ZXMiLCJTY29vYmVydCI6IlNjb29iZXJ0IiwiV2hhdCB3YXMgdGhlIHB1bmlzaG1lbnQgZm9yIFN5c2lwaHVzJiMwMzk7cyBjcmFmdGluZXNzPyI6IkN1cnNlZCB0byByb2xsIGEgYm91bGRlciB1cCBhIGhpbGwgZm9yIGV0ZXJuaXR5LiIsIkZlbXVyIjoiRmVtdXIiLCJIb3JzZS1SaWRpbmciOiJIb3JzZS1SaWRpbmciLCJNdWx0aXBsYXllciBPbmxpbmUgQmF0dGxlIEFyZW5hIChNT0JBKSI6Ik11bHRpcGxheWVyIE9ubGluZSBCYXR0bGUgQXJlbmEgKE1PQkEpIiwiV2hhdCB0eXBlIG9mIGRvZyBpcyAmIzAzOTtIYW5kc29tZSBEYW4mIzAzOTssIHRoZSBtYXNjb3Qgb2YgWWFsZSBVbml2ZXJzaXR5PyI6IkJ1bGxkb2ciLCJFbGVjdHJvbmljIG11c2ljIHByb2R1Y2VyIEt5Z28mIzAzOTtzIHBvcHVsYXJpdHkgc2t5cm9ja2V0ZWQgYWZ0ZXIgYSBjZXJ0YWluIHJlbWl4LiBXaGljaCBzb25nIGRpZCBoZSByZW1peD8iOiJFZCBTaGVlcmFuIC0gSSBTZWUgRmlyZSIsIldoYXQgaXMgSGVybWlvbmUgR3JhbmdlciYjMDM5O3MgbWlkZGxlIG5hbWU/IjoiSmVhbiIsIkdMYURPUyI6IkdMYURPUyIsIlBhaW50ZXIgUGlldCBNb25kcmlhbiAoMTg3MiAtIDE5NDQpIHdhcyBhIHBhcnQgb2Ygd2hhdCBtb3ZlbWVudD8iOiJOZW9wbGFzdGljaXNtIiwiVGhlIERyYWdvbiBXYWdvbiI6IlRoZSBEcmFnb24gV2Fnb24iLCJGYXkgV3JheSI6IkZheSBXcmF5IiwiUHJpbmNlIjoiUHJpbmNlIiwiV2hhdCBpcyB0aGUgYXBwcm94aW1hdGUgdmFsdWUgb2YgbWF0aGVtYXRpY2FsIGNvbnN0YW50IGU/IjoiMi43MiIsIlZpb2xhIjoiVmlvbGEiLCJXaGVuIHdhcyB0aGUgZmlyc3QgQ2FsbCBvZiBEdXR5IHRpdGxlIHJlbGVhc2VkPyI6Ik9jdG9iZXIgMjl0aCwgMjAwMyIsIjEwMjQiOiIxMDI0IiwidG90YWxfY29ycmVjdCI6MSwiVGV0cmlzIjoiVGV0cmlzIiwiNjYiOiI2NiIsIlVtYSBUaHVybWFuIjoiVW1hIFRodXJtYW4iLCJNaWNyb3NvZnQiOiJNaWNyb3NvZnQiLCJXYWxlcyI6IldhbGVzIiwiUmFkIE1vYmlsZSI6IlJhZCBNb2JpbGUiLCI0MCI6IjQwIiwiTmVwYWwiOiJOZXBhbCIsIkkgYW0gaW4gZ3JlYXQgcGFpbiwgcGxlYXNlIGhlbHAgbWUuIjoiSSBhbSBpbiBncmVhdCBwYWluLCBwbGVhc2UgaGVscCBtZS4iLCJMaW5rIjoiTGluayIsIkRpZCBJIGV2ZXIgdGVsbCB5b3UgdGhlIGRlZmluaXRpb24gb2YgSW5zYW5pdHkgPyI6IkRpZCBJIGV2ZXIgdGVsbCB5b3UgdGhlIGRlZmluaXRpb24gb2YgSW5zYW5pdHkgPyIsIldoaWNoIG9mIHRoZXNlIFRyYWNrTWFuaWEgZW52aXJvbm1lbnRzIHdhcyBOT1QgaW4gdGhlIG9yaWdpbmFsIGdhbWU/IjoiQmF5IiwiV2hhdCBjb3VudHJ5IGlzIG5vdCBhIHBhcnQgb2YgU2NhbmRpbmF2aWE/IjoiRmlubGFuZCIsIlR1ZG9yIjoiVHVkb3IiLCJDaHJpcyBNZXR6ZW4iOiJDaHJpcyBNZXR6ZW4iLCJSYWRpdXMiOiJSYWRpdXMiLCJCcnVjZSBXYXluZSI6IkJydWNlIFdheW5lIiwiNi4wMjIgeCAxMCZzdXAyOyZzdXAzOyI6IjYuMDIyIHggMTAmc3VwMjsmc3VwMzsiLCJXaGF0IHRvd24gd2FzICZxdW90O1NwcmluZ2ZpZWxkJnF1b3Q7IGZyb20gJnF1b3Q7VGhlIFNpbXBzb25zJnF1b3Q7IG9yaWdpbmFsbHkgbmFtZWQgYWZ0ZXI/IjoiU3ByaW5nZmllbGQsIE9yZWdvbiIsIkpvZXkiOiJKb2V5IiwiMjAwNyI6IjIwMDciLCIxR0IiOiIxR0IiLCJhbGxfYW5zd2VycyI6NDEsIldoaWNoIGF1dGhvciBhbmQgcG9ldCBmYW1vdXNseSB3cm90ZSB0aGUgbGluZSwgJnF1b3Q7VGhlIGZlbWFsZSBvZiB0aGUgc3BlY2llcyBpcyBtb3JlIGRlYWRseSB0aGFuIHRoZSBtYWxlJnF1b3Q7PyI6IlJ1ZHlhcmQgS2lwbGluZyIsIk5pbmUiOiJOaW5lIiwiTWljaGFlbCBLZWF0b24iOiJNaWNoYWVsIEtlYXRvbiIsIldobyByZWNvcmRlZCB0aGUxOTc1IGFsYnVtICYjMDM5O0NhcHRhaW4gRmFudGFzdGljIGFuZCB0aGUgQnJvd24gRGlydCBDb3dib3kmIzAzOTs/IjoiRWx0b24gSm9obiIsIk9uIHdoaWNoIEJlYXRsZXMgYWxidW0gd291bGQgeW91IGZpbmQgdGhlIHNvbmcgJiMwMzk7RWxlYW5vciBSaWdieSYjMDM5Oz8iOiJSZXZvbHZlciIsIkxhYnJhZG9yIFJldHJpZXZlciI6IkxhYnJhZG9yIFJldHJpZXZlciJ9', '2016-05-30 18:13:17.427574', 'esb3w5zikkdwubri54ca8bbtgf8z60a3')
+[16/May/2016 18:21:11] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:21:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:21:32] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:21:32] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:21:43] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:21:43] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:21:47] WARNING [django.request:182] Not Found: /
+[16/May/2016 18:21:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>"
+[16/May/2016 18:21:47] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:21:49] WARNING [django.request:182] Not Found: /polls/
+[16/May/2016 18:21:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'polls/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>"
+[16/May/2016 18:21:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'polls/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:21:52] WARNING [django.request:182] Not Found: /
+[16/May/2016 18:21:52] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>"
+[16/May/2016 18:21:52] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:22:00] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:22:00] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:22:04] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:22:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:22:08] DEBUG [django.db.backends:89] (0.001) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' LIMIT 1; args=('mgba3smys2h2tqr61u09x0l1r6at6w8h',)
+[16/May/2016 18:22:08] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 18:22:08] DEBUG [django.db.backends:89] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'mgba3smys2h2tqr61u09x0l1r6at6w8h', 'MThlODdiODdjZjQwYTdlMmFiODdjMGM3NWJjZjE3YzMwZGFkZWY2YTp7InNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIn0=', '2016-05-30 18:22:08.342500'; args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', 'MThlODdiODdjZjQwYTdlMmFiODdjMGM3NWJjZjE3YzMwZGFkZWY2YTp7InNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIn0=', '2016-05-30 18:22:08.342500')
+[16/May/2016 18:29:22] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:29:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:29:25] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 18:29:25.101809' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 18:29:25.101809', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:29:27] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:29:27] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:29:27] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:30:37] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:30:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:30:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:30:39] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 18:30:39.591107' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 18:30:39.591107', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:30:41] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:30:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:30:41] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:30:43] WARNING [django.request:182] Not Found: /questions
+[16/May/2016 18:30:43] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:30:43] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:30:49] WARNING [django.request:182] Not Found: /questions
+[16/May/2016 18:30:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:30:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:30:57] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:30:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:30:58] WARNING [django.request:182] Not Found: /questions
+[16/May/2016 18:30:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/$>"
+[16/May/2016 18:30:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:30:58] WARNING [django.request:182] Not Found: /questions
+[16/May/2016 18:30:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/$>"
+[16/May/2016 18:30:58] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:31:04] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:31:04] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:31:06] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:31:06] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:31:07] WARNING [django.request:182] Not Found: /questions
+[16/May/2016 18:31:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:31:07] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:31:08] WARNING [django.request:182] Not Found: /questions
+[16/May/2016 18:31:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:31:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:31:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 18:31:11.760715' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 18:31:11.760715', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:31:14] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:31:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>"
+[16/May/2016 18:31:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:31:21] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:31:21] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:34:34] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:34:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:35:12] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:35:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLPattern None ^/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:35:27] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:35:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:35:29] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:35:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLPattern None ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:35:29] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:35:29] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLPattern None ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'questions/'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:35:38] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:35:38] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:36:34] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:36:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:36:38] WARNING [django.request:182] Not Found: /questions/
+[16/May/2016 18:36:38] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'questions/', 'tried': [[<RegexURLPattern None ^$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 18:36:53] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:36:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:36:56] ERROR [django.request:284] Internal Server Error: /questions/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 129, in get_callable
+    view_func = getattr(mod, func_name)
+AttributeError: module 'polls' has no attribute 'urls'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 376, in resolve
+    sub_match = pattern.resolve(new_path)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 248, in resolve
+    return ResolverMatch(self.callback, args, kwargs, self.name)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 255, in callback
+    self._callback = get_callable(self._callback_str)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 136, in get_callable
+    (lookup_view, mod_name))
+django.core.exceptions.ViewDoesNotExist: Could not import 'polls.urls'. View does not exist in module polls.
+[16/May/2016 18:37:19] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:37:19] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:37:25] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:37:25] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:37:26] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 18:37:26.817886' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 18:37:26.817886', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:37:26] ERROR [django.request:284] Internal Server Error: /questions/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'number_of_questions'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Janus/Workspace/Python/exam_generation/exam/polls/views.py", line 27, in questions
+    question_list = get_questions(request.POST['number_of_questions'],request.POST['difficulty'], request.session['session token'])
+  File "/usr/local/lib/python3.5/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'number_of_questions'"
+[16/May/2016 18:39:03] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:39:03] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
