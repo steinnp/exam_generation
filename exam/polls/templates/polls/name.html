@@ -8,7 +8,7 @@
 
 <h2> Let The Questions Begin</h2>
     <div id="theBox">
-    <form action="/polls/answers/" method="post">
+    <form action="/answers/" method="post">
         {% csrf_token %}
         <ul>
         {% for field in form %}
@@ -21,4 +21,4 @@
         </ul>
         <input type="submit" value="Submit" />
     </form>
-    </div>
+    </div
