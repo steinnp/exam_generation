@@ -1,11 +1,14 @@
 <h2>now in name</h2>
-<form action="/your_name/" method="post">
+<form action="/polls/answers/" method="post">
     {% csrf_token %}
-    {{form}}
+    <ul>
     {% for field in form %}
-        <div class="fieldWrapper">
-            {{ field }}
-        </div>
+        <li>{{ field.0 }}<br>
+        {% for i in field.1 %}
+            <input type="radio" name="{{field.0}}" value={{i}}>{{i}}<br>
+        {% endfor %}
+        </li>
     {% endfor %}
+    </ul>
 <input type="submit" value="Submit" />
 </form>

@@ -1,0 +1,6 @@
+<h2>You scored {{correct}} out of {{total}} points</h2>
+<h2>Your total is {{total_correct}} out of {{all_answers}} points </h2>
+<form action="/polls/" method="post">
+    {% csrf_token %}
+    <input type="submit" id="return" value="Take another quiz">
+</form>
