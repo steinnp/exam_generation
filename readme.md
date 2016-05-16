@@ -1,9 +1,7 @@
-How the questions data structure should look like after getting the data from the api:
-keys                values
-category            string      // specifies the questions category
-question            string      // the question to be asked
-correct answer      string      // the correct answer to the question
-answers             list[string] // all answers to the question
-
-difficulty can be easy, medium and hard when sending a request to the api it can also be any
-but the return from the api will be easy medium or hard
+This is a random exam generator which can both be run from the command line and as 
+a website. 
+To run the project from the command line you can simply run python on the main.py
+file.
+To run the project as a website django needs to be installed on your computer, change
+to the exam directory and run the command python3 manage.py runserver.
+Now the website should be available at 127.0.0.1:8000

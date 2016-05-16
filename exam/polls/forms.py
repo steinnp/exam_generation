@@ -1,5 +1,6 @@
 from django import forms
 
+# form to keep track of how many questions and how difficult the user wants the questions to be
 class QuestionSettingsForm(forms.Form):
     number_of_questions = forms.CharField(label='number of questions', max_length = 100)
     difficulty = forms.CharField(label='difficulty', max_length = 100)
