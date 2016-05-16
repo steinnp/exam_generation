@@ -1,14 +1,24 @@
-<h2>now in name</h2>
-<form action="/polls/answers/" method="post">
-    {% csrf_token %}
-    <ul>
-    {% for field in form %}
-        <li>{{ field.0 }}<br>
-        {% for i in field.1 %}
-            <input type="radio" name="{{field.0}}" value={{i}}>{{i}}<br>
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/main.css' %}" />
+
+<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<h2> Let The Questions Begin</h2>
+    <div id="theBox">
+    <form action="/polls/answers/" method="post">
+        {% csrf_token %}
+        <ul>
+        {% for field in form %}
+            <li>{{ field.0 }}<br>
+            {% for i in field.1 %}
+                <input type="radio" name="{{field.0}}" value={{i}}>{{i}}<br>
+            {% endfor %}
+            </li>
         {% endfor %}
-        </li>
-    {% endfor %}
-    </ul>
-<input type="submit" value="Submit" />
-</form>
+        </ul>
+        <input type="submit" value="Submit" />
+    </form>
+    </div>

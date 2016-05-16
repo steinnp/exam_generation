@@ -1,12 +1,32 @@
 <h2>Welcome to the online random exam generator!</h2>
-<form action="questions/" method="post">
-    {% csrf_token %}
-    <label for="number_of_questions">How many questions would you like to answer? </label>
-        <input id="number_of_questions" type="number" min="1" max="50" step="1" value="1" name="number_of_questions" >
-        <label for="difficulty">How difficult would you like the questions to be?</label>
-        <input type="radio" name="difficulty" value="easy" checked> Easy<br>
-          <input type="radio" name="difficulty" value="medium"> Medium<br>
+
+
+
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/main.css' %}" />
+
+<script   src="https://code.jquery.com/jquery-2.2.3.js"   integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<div id="theBox">
+    <form action="questions/" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="number_of_questions">How many questions would you like to answer? </label>
+        </div>
+        <div>
+            <input id="number_of_questions" type="number" min="1" max="50" step="1" value="1" name="number_of_questions" >
+        </div>
+        <div>
+            <label for="difficulty">How difficult would you like the questions to be?</label>
+        </div>
+        <div>
+            <input type="radio" name="difficulty" value="easy" checked> Easy<br>
+            <input type="radio" name="difficulty" value="medium"> Medium<br>
             <input type="radio" name="difficulty" value="hard"> Hard<br>
             <input type="radio" name="difficulty" value="any"> Any
-        <input type="submit" value="OK">
-</form>
+        </div>    
+            <input type="submit" class="btn btn-default" value="OK">
+            
+    </form>
+</div>

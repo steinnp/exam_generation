@@ -3080,3 +3080,649 @@ django.utils.datastructures.MultiValueDictKeyError: "'number_of_questions'"
             ORDER BY name; args=None
 [16/May/2016 18:29:38] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
 >>>>>>> 78e70626e6f7e8568ce9fcf44f72ae8c57bae052
+[16/May/2016 18:41:41] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 18:41:41] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 18:41:44] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:41:44.851137'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:41:44.851137')
+[16/May/2016 18:41:44] ERROR [django.request:284] Internal Server Error: /questions/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'number_of_questions'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Janus/Workspace/Python/exam_generation/exam/polls/views.py", line 31, in questions
+    question_list = get_questions(request.POST['number_of_questions'],request.POST['difficulty'], request.session['session token'])
+  File "/usr/local/lib/python3.5/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'number_of_questions'"
+[16/May/2016 18:41:49] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:41:49.600373'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:41:49.600373')
+[16/May/2016 18:41:52] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:41:52.804856'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:41:52.804856')
+[16/May/2016 18:41:53] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 18:41:53] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'NjJjNTBiMTc2Yzc0MjRhODA2MmY0M2U3OTY4NWJjZGUyYTUwNWJkMTp7IkR1Y2sgU291cCI6IkR1Y2sgU291cCIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwidG90YWwgcXVlc3Rpb25zIjoiMSJ9', "expire_date" = '2016-05-30 18:41:53.865286' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('NjJjNTBiMTc2Yzc0MjRhODA2MmY0M2U3OTY4NWJjZGUyYTUwNWJkMTp7IkR1Y2sgU291cCI6IkR1Y2sgU291cCIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwidG90YWwgcXVlc3Rpb25zIjoiMSJ9', '2016-05-30 18:41:53.865286', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:42:21] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:42:21.884276'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:42:21.884276')
+[16/May/2016 18:42:21] ERROR [django.request:284] Internal Server Error: /questions/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'number_of_questions'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/Janus/Workspace/Python/exam_generation/exam/polls/views.py", line 31, in questions
+    question_list = get_questions(request.POST['number_of_questions'],request.POST['difficulty'], request.session['session token'])
+  File "/usr/local/lib/python3.5/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'number_of_questions'"
+[16/May/2016 18:42:30] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:42:30.288898'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:42:30.288898')
+[16/May/2016 18:42:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:42:34.915251'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:42:34.915251')
+[16/May/2016 18:42:35] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 18:42:35] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'NDdiOTdiZDI3OGU0MDdiY2MxNmRiZTBjNzBkOTA2NzUwZDVlZjA0Yjp7IkR1Y2sgU291cCI6IkR1Y2sgU291cCIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwidG90YWwgcXVlc3Rpb25zIjoiMSJ9', "expire_date" = '2016-05-30 18:42:35.445281' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('NDdiOTdiZDI3OGU0MDdiY2MxNmRiZTBjNzBkOTA2NzUwZDVlZjA0Yjp7IkR1Y2sgU291cCI6IkR1Y2sgU291cCIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwidG90YWwgcXVlc3Rpb25zIjoiMSJ9', '2016-05-30 18:42:35.445281', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:44:24] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:44:24.398766'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:44:24.398766')
+[16/May/2016 18:44:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:44:27.111841'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:44:27.111841')
+[16/May/2016 18:44:27] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 18:44:27] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'NWU1YjMzZTk4NDdhNGRmNGRmOTBmMjhlMTFkZDQ1YjliYzdlMWIwMDp7IkR1Y2sgU291cCI6IkR1Y2sgU291cCIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwidG90YWwgcXVlc3Rpb25zIjoiMSIsIk9jdG9iZXIgMjl0aCwgMTk4OCI6Ik9jdG9iZXIgMjl0aCwgMTk4OCJ9', "expire_date" = '2016-05-30 18:44:27.629677' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('NWU1YjMzZTk4NDdhNGRmNGRmOTBmMjhlMTFkZDQ1YjliYzdlMWIwMDp7IkR1Y2sgU291cCI6IkR1Y2sgU291cCIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwidG90YWwgcXVlc3Rpb25zIjoiMSIsIk9jdG9iZXIgMjl0aCwgMTk4OCI6Ik9jdG9iZXIgMjl0aCwgMTk4OCJ9', '2016-05-30 18:44:27.629677', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 18:44:34] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h' AND "django_session"."expire_date" > '2016-05-16 18:44:34.475845'); args=('mgba3smys2h2tqr61u09x0l1r6at6w8h', '2016-05-16 18:44:34.475845')
+[16/May/2016 18:44:35] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 18:44:35] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'MTFmNmQ4MzQ1MWY4NGFlMzFkOGFhYjY4ZTNhNGYzZDg2MDExYWZmZjp7IlQtODAwIjoiVC04MDAiLCJ0b3RhbCBxdWVzdGlvbnMiOiI1MCIsIlRoZSBCZWF0bGVzIjoiVGhlIEJlYXRsZXMiLCJQZXJ0dXJiYXRvciI6IlBlcnR1cmJhdG9yIiwiVGhlIFVuaXRlZCBLaW5nZG9tIjoiVGhlIFVuaXRlZCBLaW5nZG9tIiwiSGF0cyI6IkhhdHMiLCJOb3J3YXkiOiJOb3J3YXkiLCJTdWdhciI6IlN1Z2FyIiwiQ2hpY2FnbyI6IkNoaWNhZ28iLCJCcmF6aWwiOiJCcmF6aWwiLCIxMDAgTWVnYXRvbnMiOiIxMDAgTWVnYXRvbnMiLCJHZWFyYm94IFNvZnR3YXJlIjoiR2VhcmJveCBTb2Z0d2FyZSIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwiUmVkIjoiUmVkIiwiRHVjayBTb3VwIjoiRHVjayBTb3VwIiwiRG9sbGFyIEZsdSI6IkRvbGxhciBGbHUiLCJEb2xwaGluIjoiRG9scGhpbiIsIjcgQm9va3MiOiI3IEJvb2tzIiwiTW9ybW9uaXNtIjoiTW9ybW9uaXNtIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIk9zc2FuIjoiT3NzYW4iLCJDbHlkZSI6IkNseWRlIiwiSGVhcnRzIjoiSGVhcnRzIiwiS2VueWEiOiJLZW55YSIsIlNpeCI6IlNpeCIsIkhheWFvIE1peWF6YWtpIjoiSGF5YW8gTWl5YXpha2kiLCJQdXRuZXkiOiJQdXRuZXkiLCJHb2xkU3JjIjoiR29sZFNyYyIsIkFtYXpvbiI6IkFtYXpvbiIsIkZvY3VzIjoiRm9jdXMiLCJXZXN0d29ybGQiOiJXZXN0d29ybGQiLCIxOTY5IjoiMTk2OSIsIlRoZSBUb3JuYWRvcyI6IlRoZSBUb3JuYWRvcyIsIlBvcG9wbyI6IlBvcG9wbyIsIkdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiOiJHb29kYnllIFllbGxvdyBCcmljayBSb2FkIiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIlRoZSBKZXRzIjoiVGhlIEpldHMiLCJBc3RvcmlhIEdyZWVuZ3Jhc3MiOiJBc3RvcmlhIEdyZWVuZ3Jhc3MiLCIxMDAiOiIxMDAiLCJNci4gUG90YXRvIEhlYWQiOiJNci4gUG90YXRvIEhlYWQiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJBSy00NyI6IkFLLTQ3IiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIjUwMCI6IjUwMCIsIkpvaG5ueSBEZXBwIjoiSm9obm55IERlcHAiLCJIYWlyeSI6IkhhaXJ5IiwiTXIuIFJvZ2VycyI6Ik1yLiBSb2dlcnMiLCIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIjoiMTAgeWVhcnMgaW4gcHJpc29uIGFuZCBhIGZpbmUgb2YgJDUwLDAwMCIsIkRhbiBNYXJpbm8iOiJEYW4gTWFyaW5vIiwiT2N0b2JlciAyOXRoLCAxOTg4IjoiT2N0b2JlciAyOXRoLCAxOTg4IiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIjEwIjoiMTAiLCJBaXIiOiJBaXIiLCJNYWRlb24iOiJNYWRlb24iLCJQaGlsYWRlbHBoaWEgRmx5ZXJzIjoiUGhpbGFkZWxwaGlhIEZseWVycyJ9', "expire_date" = '2016-05-30 18:44:35.020514' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('MTFmNmQ4MzQ1MWY4NGFlMzFkOGFhYjY4ZTNhNGYzZDg2MDExYWZmZjp7IlQtODAwIjoiVC04MDAiLCJ0b3RhbCBxdWVzdGlvbnMiOiI1MCIsIlRoZSBCZWF0bGVzIjoiVGhlIEJlYXRsZXMiLCJQZXJ0dXJiYXRvciI6IlBlcnR1cmJhdG9yIiwiVGhlIFVuaXRlZCBLaW5nZG9tIjoiVGhlIFVuaXRlZCBLaW5nZG9tIiwiSGF0cyI6IkhhdHMiLCJOb3J3YXkiOiJOb3J3YXkiLCJTdWdhciI6IlN1Z2FyIiwiQ2hpY2FnbyI6IkNoaWNhZ28iLCJCcmF6aWwiOiJCcmF6aWwiLCIxMDAgTWVnYXRvbnMiOiIxMDAgTWVnYXRvbnMiLCJHZWFyYm94IFNvZnR3YXJlIjoiR2VhcmJveCBTb2Z0d2FyZSIsInNlc3Npb24gdG9rZW4iOiIyZTc2MmJkZWY3YmZhYjBiOGVlYmEwYzgxODZmYTA2NjkwNTAxNDk3Nzc2MWRiODg4NWExODY2NGQ0NGM5ZTkyIiwiUmVkIjoiUmVkIiwiRHVjayBTb3VwIjoiRHVjayBTb3VwIiwiRG9sbGFyIEZsdSI6IkRvbGxhciBGbHUiLCJEb2xwaGluIjoiRG9scGhpbiIsIjcgQm9va3MiOiI3IEJvb2tzIiwiTW9ybW9uaXNtIjoiTW9ybW9uaXNtIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIk9zc2FuIjoiT3NzYW4iLCJDbHlkZSI6IkNseWRlIiwiSGVhcnRzIjoiSGVhcnRzIiwiS2VueWEiOiJLZW55YSIsIlNpeCI6IlNpeCIsIkhheWFvIE1peWF6YWtpIjoiSGF5YW8gTWl5YXpha2kiLCJQdXRuZXkiOiJQdXRuZXkiLCJHb2xkU3JjIjoiR29sZFNyYyIsIkFtYXpvbiI6IkFtYXpvbiIsIkZvY3VzIjoiRm9jdXMiLCJXZXN0d29ybGQiOiJXZXN0d29ybGQiLCIxOTY5IjoiMTk2OSIsIlRoZSBUb3JuYWRvcyI6IlRoZSBUb3JuYWRvcyIsIlBvcG9wbyI6IlBvcG9wbyIsIkdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiOiJHb29kYnllIFllbGxvdyBCcmljayBSb2FkIiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIlRoZSBKZXRzIjoiVGhlIEpldHMiLCJBc3RvcmlhIEdyZWVuZ3Jhc3MiOiJBc3RvcmlhIEdyZWVuZ3Jhc3MiLCIxMDAiOiIxMDAiLCJNci4gUG90YXRvIEhlYWQiOiJNci4gUG90YXRvIEhlYWQiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJBSy00NyI6IkFLLTQ3IiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIjUwMCI6IjUwMCIsIkpvaG5ueSBEZXBwIjoiSm9obm55IERlcHAiLCJIYWlyeSI6IkhhaXJ5IiwiTXIuIFJvZ2VycyI6Ik1yLiBSb2dlcnMiLCIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIjoiMTAgeWVhcnMgaW4gcHJpc29uIGFuZCBhIGZpbmUgb2YgJDUwLDAwMCIsIkRhbiBNYXJpbm8iOiJEYW4gTWFyaW5vIiwiT2N0b2JlciAyOXRoLCAxOTg4IjoiT2N0b2JlciAyOXRoLCAxOTg4IiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIjEwIjoiMTAiLCJBaXIiOiJBaXIiLCJNYWRlb24iOiJNYWRlb24iLCJQaGlsYWRlbHBoaWEgRmx5ZXJzIjoiUGhpbGFkZWxwaGlhIEZseWVycyJ9', '2016-05-30 18:44:35.020514', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:12:08] DEBUG [django.db.backends:89] (0.005) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 22:12:08] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 22:14:10] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:14:10.477700' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:14:10.477700', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:14:10] WARNING [django.request:182] Not Found: /favicon.ico
+[16/May/2016 22:14:10] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:14:12] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:14:12.372699' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:14:12.372699', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:14:13] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 22:14:13] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'MGMyOTExYmY1ZmVlY2NlMzY0NDNiOWI1YTE5Yzk5NjZjNjU3OTM0Nzp7Ik1yLiBSb2dlcnMiOiJNci4gUm9nZXJzIiwiR2VhcmJveCBTb2Z0d2FyZSI6IkdlYXJib3ggU29mdHdhcmUiLCJTdWdhciI6IlN1Z2FyIiwiRGFuIE1hcmlubyI6IkRhbiBNYXJpbm8iLCJPY3RvYmVyIDI5dGgsIDE5ODgiOiJPY3RvYmVyIDI5dGgsIDE5ODgiLCJNb3Jtb25pc20iOiJNb3Jtb25pc20iLCJSZWQiOiJSZWQiLCJDaGljYWdvIjoiQ2hpY2FnbyIsIlRoZSBUb3JuYWRvcyI6IlRoZSBUb3JuYWRvcyIsIktlbnlhIjoiS2VueWEiLCJBSy00NyI6IkFLLTQ3IiwiUGhpbGFkZWxwaGlhIEZseWVycyI6IlBoaWxhZGVscGhpYSBGbHllcnMiLCJQdXRuZXkiOiJQdXRuZXkiLCJXZXN0d29ybGQiOiJXZXN0d29ybGQiLCJEb2xwaGluIjoiRG9scGhpbiIsIk9zc2FuIjoiT3NzYW4iLCJIb2dhcnRoIEh1Z2hlcyI6IkhvZ2FydGggSHVnaGVzIiwiQW1hem9uIjoiQW1hem9uIiwiRm9jdXMiOiJGb2N1cyIsIk1hZGVvbiI6Ik1hZGVvbiIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIkpvaG5ueSBEZXBwIjoiSm9obm55IERlcHAiLCJHb2xkU3JjIjoiR29sZFNyYyIsIjE5NjkiOiIxOTY5IiwiSGFpcnkiOiJIYWlyeSIsIlRoZSBVbml0ZWQgS2luZ2RvbSI6IlRoZSBVbml0ZWQgS2luZ2RvbSIsIkhhdHMiOiJIYXRzIiwiQnJhemlsIjoiQnJhemlsIiwiQ2x5ZGUiOiJDbHlkZSIsIkhlYXJ0cyI6IkhlYXJ0cyIsIkRvbGxhciBGbHUiOiJEb2xsYXIgRmx1IiwiVGhlIEJlYXRsZXMiOiJUaGUgQmVhdGxlcyIsIlRoZSBKZXRzIjoiVGhlIEpldHMiLCJDb2xkIFdhciI6IkNvbGQgV2FyIiwiTm9yd2F5IjoiTm9yd2F5IiwiRHVjayBTb3VwIjoiRHVjayBTb3VwIiwiNTAwIjoiNTAwIiwiQXN0b3JpYSBHcmVlbmdyYXNzIjoiQXN0b3JpYSBHcmVlbmdyYXNzIiwiUG9wb3BvIjoiUG9wb3BvIiwiMTAiOiIxMCIsIjEwMCBNZWdhdG9ucyI6IjEwMCBNZWdhdG9ucyIsIlNpeCI6IlNpeCIsIkJpZyBEYWRkeSI6IkJpZyBEYWRkeSIsInRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJQZXJ0dXJiYXRvciI6IlBlcnR1cmJhdG9yIiwiTXIuIFBvdGF0byBIZWFkIjoiTXIuIFBvdGF0byBIZWFkIiwiQWlyIjoiQWlyIiwic2Vzc2lvbiB0b2tlbiI6IjJlNzYyYmRlZjdiZmFiMGI4ZWViYTBjODE4NmZhMDY2OTA1MDE0OTc3NzYxZGI4ODg1YTE4NjY0ZDQ0YzllOTIiLCJULTgwMCI6IlQtODAwIiwiMTAwIjoiMTAwIiwiNyBCb29rcyI6IjcgQm9va3MiLCJHb29kYnllIFllbGxvdyBCcmljayBSb2FkIjoiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCIsIiZxdW90O0ZyYW5rbHksIG15IGRlYXIsIEkgZG9uJiMwMzk7dCBnaXZlIGEgZGFtbi4mcXVvdDsiOiImcXVvdDtGcmFua2x5LCBteSBkZWFyLCBJIGRvbiYjMDM5O3QgZ2l2ZSBhIGRhbW4uJnF1b3Q7IiwiSGF5YW8gTWl5YXpha2kiOiJIYXlhbyBNaXlhemFraSIsIlJlZCBMaW9uIjoiUmVkIExpb24ifQ==', "expire_date" = '2016-05-30 22:14:13.627482' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('MGMyOTExYmY1ZmVlY2NlMzY0NDNiOWI1YTE5Yzk5NjZjNjU3OTM0Nzp7Ik1yLiBSb2dlcnMiOiJNci4gUm9nZXJzIiwiR2VhcmJveCBTb2Z0d2FyZSI6IkdlYXJib3ggU29mdHdhcmUiLCJTdWdhciI6IlN1Z2FyIiwiRGFuIE1hcmlubyI6IkRhbiBNYXJpbm8iLCJPY3RvYmVyIDI5dGgsIDE5ODgiOiJPY3RvYmVyIDI5dGgsIDE5ODgiLCJNb3Jtb25pc20iOiJNb3Jtb25pc20iLCJSZWQiOiJSZWQiLCJDaGljYWdvIjoiQ2hpY2FnbyIsIlRoZSBUb3JuYWRvcyI6IlRoZSBUb3JuYWRvcyIsIktlbnlhIjoiS2VueWEiLCJBSy00NyI6IkFLLTQ3IiwiUGhpbGFkZWxwaGlhIEZseWVycyI6IlBoaWxhZGVscGhpYSBGbHllcnMiLCJQdXRuZXkiOiJQdXRuZXkiLCJXZXN0d29ybGQiOiJXZXN0d29ybGQiLCJEb2xwaGluIjoiRG9scGhpbiIsIk9zc2FuIjoiT3NzYW4iLCJIb2dhcnRoIEh1Z2hlcyI6IkhvZ2FydGggSHVnaGVzIiwiQW1hem9uIjoiQW1hem9uIiwiRm9jdXMiOiJGb2N1cyIsIk1hZGVvbiI6Ik1hZGVvbiIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIkpvaG5ueSBEZXBwIjoiSm9obm55IERlcHAiLCJHb2xkU3JjIjoiR29sZFNyYyIsIjE5NjkiOiIxOTY5IiwiSGFpcnkiOiJIYWlyeSIsIlRoZSBVbml0ZWQgS2luZ2RvbSI6IlRoZSBVbml0ZWQgS2luZ2RvbSIsIkhhdHMiOiJIYXRzIiwiQnJhemlsIjoiQnJhemlsIiwiQ2x5ZGUiOiJDbHlkZSIsIkhlYXJ0cyI6IkhlYXJ0cyIsIkRvbGxhciBGbHUiOiJEb2xsYXIgRmx1IiwiVGhlIEJlYXRsZXMiOiJUaGUgQmVhdGxlcyIsIlRoZSBKZXRzIjoiVGhlIEpldHMiLCJDb2xkIFdhciI6IkNvbGQgV2FyIiwiTm9yd2F5IjoiTm9yd2F5IiwiRHVjayBTb3VwIjoiRHVjayBTb3VwIiwiNTAwIjoiNTAwIiwiQXN0b3JpYSBHcmVlbmdyYXNzIjoiQXN0b3JpYSBHcmVlbmdyYXNzIiwiUG9wb3BvIjoiUG9wb3BvIiwiMTAiOiIxMCIsIjEwMCBNZWdhdG9ucyI6IjEwMCBNZWdhdG9ucyIsIlNpeCI6IlNpeCIsIkJpZyBEYWRkeSI6IkJpZyBEYWRkeSIsInRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJQZXJ0dXJiYXRvciI6IlBlcnR1cmJhdG9yIiwiTXIuIFBvdGF0byBIZWFkIjoiTXIuIFBvdGF0byBIZWFkIiwiQWlyIjoiQWlyIiwic2Vzc2lvbiB0b2tlbiI6IjJlNzYyYmRlZjdiZmFiMGI4ZWViYTBjODE4NmZhMDY2OTA1MDE0OTc3NzYxZGI4ODg1YTE4NjY0ZDQ0YzllOTIiLCJULTgwMCI6IlQtODAwIiwiMTAwIjoiMTAwIiwiNyBCb29rcyI6IjcgQm9va3MiLCJHb29kYnllIFllbGxvdyBCcmljayBSb2FkIjoiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCIsIiZxdW90O0ZyYW5rbHksIG15IGRlYXIsIEkgZG9uJiMwMzk7dCBnaXZlIGEgZGFtbi4mcXVvdDsiOiImcXVvdDtGcmFua2x5LCBteSBkZWFyLCBJIGRvbiYjMDM5O3QgZ2l2ZSBhIGRhbW4uJnF1b3Q7IiwiSGF5YW8gTWl5YXpha2kiOiJIYXlhbyBNaXlhemFraSIsIlJlZCBMaW9uIjoiUmVkIExpb24ifQ==', '2016-05-30 22:14:13.627482', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:17:30] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:17:30.635513' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:17:30.635513', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:17:35] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:17:35.634959' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:17:35.634959', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:18:29] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:18:29.399564' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:18:29.399564', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:18:30] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:18:30.918251' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:18:30.918251', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:18:36] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:18:36.837300' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:18:36.837300', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:01.758788' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:01.758788', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:02] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:02.556848' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:02.556848', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:03] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:03.381109' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:03.381109', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:06] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:06.628461' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:06.628461', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:07] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:07.182034' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:07.182034', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:07] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:07.362812' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:07.362812', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:20:07] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:20:07.553570' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:20:07.553570', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:21:47] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:21:47.635805' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:21:47.635805', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:23:11] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:23:11.985909' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:23:11.985909', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:25:53] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 22:25:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 22:27:37] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:27:37.763665' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:27:37.763665', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:27:56] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:27:56.479698' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:27:56.479698', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:27:58] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:27:58.534814' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:27:58.534814', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:28:25] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:28:25.399059' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:28:25.399059', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:28:26] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:28:26.813910' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:28:26.813910', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:29:22] DEBUG [django.db.backends:89] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[16/May/2016 22:29:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[16/May/2016 22:29:47] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:29:47.329636' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:29:47.329636', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:29:48] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:29:48.189313' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:29:48.189313', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:30:32] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:30:32.852800' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:30:32.852800', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:31:01] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:31:01.231412' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:31:01.231412', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:31:09] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:31:09.350081' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:31:09.350081', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:31:40] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:31:40.683566' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:31:40.683566', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:32:12] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:32:12.880852' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:32:12.880852', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:32:12] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:32:12] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:32:13] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:32:13.753431' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:32:13.753431', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:32:13] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:32:13] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:32:14] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:32:14.503615' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:32:14.503615', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:32:14] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:32:14] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:32:16] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:32:16.855473' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:32:16.855473', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:32:16] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:32:16] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:34:08] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:34:08.476198' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:34:08.476198', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:34:08] DEBUG [django.template:927] Exception while resolving variable 'STATIC_URL' in template 'polls/index2.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [STATIC_URL] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110f36e18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111094518>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11101f8d0>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x110f36bf8>>}, {}, {'form': <QuestionSettingsForm bound=False, valid=Unknown, fields=(number_of_questions;difficulty)>}]"
+[16/May/2016 22:34:08] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:34:08] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:34:22] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:34:22.995634' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:34:22.995634', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:34:22] DEBUG [django.template:927] Exception while resolving variable 'STATIC_URL' in template 'polls/index2.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [STATIC_URL] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x1110bdd90>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111090438>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111099ba8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x1110bdea0>>}, {}, {'form': <QuestionSettingsForm bound=False, valid=Unknown, fields=(number_of_questions;difficulty)>}]"
+[16/May/2016 22:34:23] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:34:23] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:34:37] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:34:37.460960' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:34:37.460960', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:34:37] DEBUG [django.template:927] Exception while resolving variable 'STATIC_URL' in template 'polls/index2.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [STATIC_URL] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110f36ae8>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111090128>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11101c5f8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x110f366a8>>}, {}, {'form': <QuestionSettingsForm bound=False, valid=Unknown, fields=(number_of_questions;difficulty)>}]"
+[16/May/2016 22:34:37] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:34:37] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:34:49] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:34:49.619304' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:34:49.619304', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:34:49] DEBUG [django.template:927] Exception while resolving variable 'STATIC_URL' in template 'polls/index2.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [STATIC_URL] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110f36e18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111094da0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x111090940>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x110f36c80>>}, {}, {'form': <QuestionSettingsForm bound=False, valid=Unknown, fields=(number_of_questions;difficulty)>}]"
+[16/May/2016 22:34:49] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:34:49] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:35:55] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:35:55.560362' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:35:55.560362', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:35:55] DEBUG [django.template:927] Exception while resolving variable 'STATIC_URL' in template 'polls/index2.html'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/usr/local/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'STATIC_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [STATIC_URL] in "[{'True': True, 'False': False, 'None': None}, {'request': <WSGIRequest: GET '/'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x110f36e18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x111094c88>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x11101fac8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'WARNING': 30, 'SUCCESS': 25, 'ERROR': 40}, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x110f36bf8>>}, {}, {'form': <QuestionSettingsForm bound=False, valid=Unknown, fields=(number_of_questions;difficulty)>}]"
+[16/May/2016 22:35:55] WARNING [django.request:182] Not Found: /css/main.css
+[16/May/2016 22:35:55] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'css/main.css', 'tried': [[<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern index ^$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern questions ^questions/$>], [<RegexURLResolver <module 'polls.urls' from '/Users/Janus/Workspace/Python/exam_generation/exam/polls/urls.py'> (None:None) ^>, <RegexURLPattern answers ^answers/$>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[16/May/2016 22:40:53] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:40:53.373628' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:40:53.373628', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:40:56] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:40:56.612025' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:40:56.612025', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:40:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:40:57.641370' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:40:57.641370', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:41:03] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:41:02.998754' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:41:02.998754', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:41:44] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:41:44.322424' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:41:44.322424', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:41:45] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:41:45.124505' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:41:45.124505', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:41:55] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:41:55.024261' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:41:55.024261', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:42:56] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:42:56.157915' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:42:56.157915', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:42:57] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:42:57.365287' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:42:57.365287', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:43:17] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:43:17.896653' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:43:17.896653', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:44:05] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:44:05.274265' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:44:05.274265', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:44:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:44:42.071705' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:44:42.071705', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:45:25] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:45:25.193100' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:45:25.193100', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:46:14] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:46:14.459924' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:46:14.459924', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:46:32] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:46:32.898304' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:46:32.898304', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:46:40] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:46:40.786494' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:46:40.786494', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:46:59] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:46:59.553878' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:46:59.553878', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:47:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:47:42.728845' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:47:42.728845', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:49:07] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:49:07.840397' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:49:07.840397', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:49:26] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:49:26.342664' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:49:26.342664', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:49:53] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:49:53.884578' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:49:53.884578', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:50:25] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:50:25.438336' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:50:25.438336', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:50:41] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:50:41.141411' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:50:41.141411', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 22:50:42] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 22:50:42.405867' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 22:50:42.405867', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:04:24] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 23:04:24.806521' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 23:04:24.806521', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:04:26] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 23:04:26.614310' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 23:04:26.614310', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:04:29] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 23:04:29] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'MzQyY2IxMDJlMzgwZDQ1YjliYTFiMzQwOGVlYWU3NDcxNWI4YmM0OTp7InRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIkJyYXppbCI6IkJyYXppbCIsIlJlZCI6IlJlZCIsIlN1Z2FyIjoiU3VnYXIiLCJBSy00NyI6IkFLLTQ3IiwiT2N0b2JlciAyOXRoLCAxOTg4IjoiT2N0b2JlciAyOXRoLCAxOTg4IiwiJnF1b3Q7RnJhbmtseSwgbXkgZGVhciwgSSBkb24mIzAzOTt0IGdpdmUgYSBkYW1uLiZxdW90OyI6IiZxdW90O0ZyYW5rbHksIG15IGRlYXIsIEkgZG9uJiMwMzk7dCBnaXZlIGEgZGFtbi4mcXVvdDsiLCJIZWFydHMiOiJIZWFydHMiLCJNYWRlb24iOiJNYWRlb24iLCJQaGlsYWRlbHBoaWEgRmx5ZXJzIjoiUGhpbGFkZWxwaGlhIEZseWVycyIsIjcgQm9va3MiOiI3IEJvb2tzIiwiV2VzdHdvcmxkIjoiV2VzdHdvcmxkIiwiUG9wb3BvIjoiUG9wb3BvIiwiMTAwIjoiMTAwIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIkNoaWNhZ28iOiJDaGljYWdvIiwiS2VueWEiOiJLZW55YSIsIkFtYXpvbiI6IkFtYXpvbiIsIlNpeCI6IlNpeCIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiMTAwIE1lZ2F0b25zIjoiMTAwIE1lZ2F0b25zIiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIk9zc2FuIjoiT3NzYW4iLCIxMCI6IjEwIiwiR2VhcmJveCBTb2Z0d2FyZSI6IkdlYXJib3ggU29mdHdhcmUiLCJUaGUgVG9ybmFkb3MiOiJUaGUgVG9ybmFkb3MiLCJNci4gUG90YXRvIEhlYWQiOiJNci4gUG90YXRvIEhlYWQiLCJHb2xkU3JjIjoiR29sZFNyYyIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsIk1vcm1vbmlzbSI6Ik1vcm1vbmlzbSIsIk5vcndheSI6Ik5vcndheSIsIkFpciI6IkFpciIsIkRvbHBoaW4iOiJEb2xwaGluIiwiUHV0bmV5IjoiUHV0bmV5IiwiVGhlIEJlYXRsZXMiOiJUaGUgQmVhdGxlcyIsIlRoZSBVbml0ZWQgS2luZ2RvbSI6IlRoZSBVbml0ZWQgS2luZ2RvbSIsIk1yLiBSb2dlcnMiOiJNci4gUm9nZXJzIiwiU3RldmVuIFNwaWVsYmVyZyI6IlN0ZXZlbiBTcGllbGJlcmciLCJQZXJ0dXJiYXRvciI6IlBlcnR1cmJhdG9yIiwiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCI6Ikdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiLCI1MDAiOiI1MDAiLCIxOTY5IjoiMTk2OSIsIlQtODAwIjoiVC04MDAiLCJEYW4gTWFyaW5vIjoiRGFuIE1hcmlubyIsIkNseWRlIjoiQ2x5ZGUiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJIYWlyeSI6IkhhaXJ5IiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIlRoZSBKZXRzIjoiVGhlIEpldHMiLCJEb2xsYXIgRmx1IjoiRG9sbGFyIEZsdSIsIkR1Y2sgU291cCI6IkR1Y2sgU291cCIsIkZvY3VzIjoiRm9jdXMiLCJzZXNzaW9uIHRva2VuIjoiMmU3NjJiZGVmN2JmYWIwYjhlZWJhMGM4MTg2ZmEwNjY5MDUwMTQ5Nzc3NjFkYjg4ODVhMTg2NjRkNDRjOWU5MiIsIkpvaG5ueSBEZXBwIjoiSm9obm55IERlcHAiLCJIYXRzIjoiSGF0cyJ9', "expire_date" = '2016-05-30 23:04:29.012743' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('MzQyY2IxMDJlMzgwZDQ1YjliYTFiMzQwOGVlYWU3NDcxNWI4YmM0OTp7InRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIkJyYXppbCI6IkJyYXppbCIsIlJlZCI6IlJlZCIsIlN1Z2FyIjoiU3VnYXIiLCJBSy00NyI6IkFLLTQ3IiwiT2N0b2JlciAyOXRoLCAxOTg4IjoiT2N0b2JlciAyOXRoLCAxOTg4IiwiJnF1b3Q7RnJhbmtseSwgbXkgZGVhciwgSSBkb24mIzAzOTt0IGdpdmUgYSBkYW1uLiZxdW90OyI6IiZxdW90O0ZyYW5rbHksIG15IGRlYXIsIEkgZG9uJiMwMzk7dCBnaXZlIGEgZGFtbi4mcXVvdDsiLCJIZWFydHMiOiJIZWFydHMiLCJNYWRlb24iOiJNYWRlb24iLCJQaGlsYWRlbHBoaWEgRmx5ZXJzIjoiUGhpbGFkZWxwaGlhIEZseWVycyIsIjcgQm9va3MiOiI3IEJvb2tzIiwiV2VzdHdvcmxkIjoiV2VzdHdvcmxkIiwiUG9wb3BvIjoiUG9wb3BvIiwiMTAwIjoiMTAwIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIkNoaWNhZ28iOiJDaGljYWdvIiwiS2VueWEiOiJLZW55YSIsIkFtYXpvbiI6IkFtYXpvbiIsIlNpeCI6IlNpeCIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiMTAwIE1lZ2F0b25zIjoiMTAwIE1lZ2F0b25zIiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIk9zc2FuIjoiT3NzYW4iLCIxMCI6IjEwIiwiR2VhcmJveCBTb2Z0d2FyZSI6IkdlYXJib3ggU29mdHdhcmUiLCJUaGUgVG9ybmFkb3MiOiJUaGUgVG9ybmFkb3MiLCJNci4gUG90YXRvIEhlYWQiOiJNci4gUG90YXRvIEhlYWQiLCJHb2xkU3JjIjoiR29sZFNyYyIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsIk1vcm1vbmlzbSI6Ik1vcm1vbmlzbSIsIk5vcndheSI6Ik5vcndheSIsIkFpciI6IkFpciIsIkRvbHBoaW4iOiJEb2xwaGluIiwiUHV0bmV5IjoiUHV0bmV5IiwiVGhlIEJlYXRsZXMiOiJUaGUgQmVhdGxlcyIsIlRoZSBVbml0ZWQgS2luZ2RvbSI6IlRoZSBVbml0ZWQgS2luZ2RvbSIsIk1yLiBSb2dlcnMiOiJNci4gUm9nZXJzIiwiU3RldmVuIFNwaWVsYmVyZyI6IlN0ZXZlbiBTcGllbGJlcmciLCJQZXJ0dXJiYXRvciI6IlBlcnR1cmJhdG9yIiwiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCI6Ikdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiLCI1MDAiOiI1MDAiLCIxOTY5IjoiMTk2OSIsIlQtODAwIjoiVC04MDAiLCJEYW4gTWFyaW5vIjoiRGFuIE1hcmlubyIsIkNseWRlIjoiQ2x5ZGUiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJIYWlyeSI6IkhhaXJ5IiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIlRoZSBKZXRzIjoiVGhlIEpldHMiLCJEb2xsYXIgRmx1IjoiRG9sbGFyIEZsdSIsIkR1Y2sgU291cCI6IkR1Y2sgU291cCIsIkZvY3VzIjoiRm9jdXMiLCJzZXNzaW9uIHRva2VuIjoiMmU3NjJiZGVmN2JmYWIwYjhlZWJhMGM4MTg2ZmEwNjY5MDUwMTQ5Nzc3NjFkYjg4ODVhMTg2NjRkNDRjOWU5MiIsIkpvaG5ueSBEZXBwIjoiSm9obm55IERlcHAiLCJIYXRzIjoiSGF0cyJ9', '2016-05-30 23:04:29.012743', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:05:56] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 23:05:56.669932' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 23:05:56.669932', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:05:58] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 23:05:58] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'OGY1YjBjYThjY2QxN2JhNjVlYjI4NjBjZWY5OGIwYmM1NjBmMzc4YTp7InRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiUGVydHVyYmF0b3IiOiJQZXJ0dXJiYXRvciIsIktlbnlhIjoiS2VueWEiLCJCcmF6aWwiOiJCcmF6aWwiLCJSZWQiOiJSZWQiLCJDbHlkZSI6IkNseWRlIiwiR29sZFNyYyI6IkdvbGRTcmMiLCJPY3RvYmVyIDI5dGgsIDE5ODgiOiJPY3RvYmVyIDI5dGgsIDE5ODgiLCJNYWRlb24iOiJNYWRlb24iLCJIZWFydHMiOiJIZWFydHMiLCImcXVvdDtGcmFua2x5LCBteSBkZWFyLCBJIGRvbiYjMDM5O3QgZ2l2ZSBhIGRhbW4uJnF1b3Q7IjoiJnF1b3Q7RnJhbmtseSwgbXkgZGVhciwgSSBkb24mIzAzOTt0IGdpdmUgYSBkYW1uLiZxdW90OyIsIlBoaWxhZGVscGhpYSBGbHllcnMiOiJQaGlsYWRlbHBoaWEgRmx5ZXJzIiwiV2VzdHdvcmxkIjoiV2VzdHdvcmxkIiwiMTAwIjoiMTAwIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIkNoaWNhZ28iOiJDaGljYWdvIiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIlB1dG5leSI6IlB1dG5leSIsIkFtYXpvbiI6IkFtYXpvbiIsIlNpeCI6IlNpeCIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiMTAwIE1lZ2F0b25zIjoiMTAwIE1lZ2F0b25zIiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIk9zc2FuIjoiT3NzYW4iLCIxMCI6IjEwIiwiRG9scGhpbiI6IkRvbHBoaW4iLCJUaGUgSmV0cyI6IlRoZSBKZXRzIiwiVGhlIFRvcm5hZG9zIjoiVGhlIFRvcm5hZG9zIiwiUG9wb3BvIjoiUG9wb3BvIiwiQXN0b3JpYSBHcmVlbmdyYXNzIjoiQXN0b3JpYSBHcmVlbmdyYXNzIiwiTW9ybW9uaXNtIjoiTW9ybW9uaXNtIiwiTm9yd2F5IjoiTm9yd2F5IiwiQWlyIjoiQWlyIiwiNyBCb29rcyI6IjcgQm9va3MiLCJBSy00NyI6IkFLLTQ3IiwiVGhlIFVuaXRlZCBLaW5nZG9tIjoiVGhlIFVuaXRlZCBLaW5nZG9tIiwiTXIuIFJvZ2VycyI6Ik1yLiBSb2dlcnMiLCJUaGUgQmVhdGxlcyI6IlRoZSBCZWF0bGVzIiwiTXIuIFBvdGF0byBIZWFkIjoiTXIuIFBvdGF0byBIZWFkIiwiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCI6Ikdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiLCJTdGV2ZW4gU3BpZWxiZXJnIjoiU3RldmVuIFNwaWVsYmVyZyIsIjUwMCI6IjUwMCIsIjE5NjkiOiIxOTY5Iiwic2Vzc2lvbiB0b2tlbiI6IjJlNzYyYmRlZjdiZmFiMGI4ZWViYTBjODE4NmZhMDY2OTA1MDE0OTc3NzYxZGI4ODg1YTE4NjY0ZDQ0YzllOTIiLCJEYW4gTWFyaW5vIjoiRGFuIE1hcmlubyIsIlN1Z2FyIjoiU3VnYXIiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJIYWlyeSI6IkhhaXJ5IiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIkdlYXJib3ggU29mdHdhcmUiOiJHZWFyYm94IFNvZnR3YXJlIiwiRG9sbGFyIEZsdSI6IkRvbGxhciBGbHUiLCJEdWNrIFNvdXAiOiJEdWNrIFNvdXAiLCJIYXRzIjoiSGF0cyIsIlQtODAwIjoiVC04MDAiLCJGaWdhcm8iOiJGaWdhcm8iLCJKb2hubnkgRGVwcCI6IkpvaG5ueSBEZXBwIiwiRm9jdXMiOiJGb2N1cyJ9', "expire_date" = '2016-05-30 23:05:58.275928' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('OGY1YjBjYThjY2QxN2JhNjVlYjI4NjBjZWY5OGIwYmM1NjBmMzc4YTp7InRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiUGVydHVyYmF0b3IiOiJQZXJ0dXJiYXRvciIsIktlbnlhIjoiS2VueWEiLCJCcmF6aWwiOiJCcmF6aWwiLCJSZWQiOiJSZWQiLCJDbHlkZSI6IkNseWRlIiwiR29sZFNyYyI6IkdvbGRTcmMiLCJPY3RvYmVyIDI5dGgsIDE5ODgiOiJPY3RvYmVyIDI5dGgsIDE5ODgiLCJNYWRlb24iOiJNYWRlb24iLCJIZWFydHMiOiJIZWFydHMiLCImcXVvdDtGcmFua2x5LCBteSBkZWFyLCBJIGRvbiYjMDM5O3QgZ2l2ZSBhIGRhbW4uJnF1b3Q7IjoiJnF1b3Q7RnJhbmtseSwgbXkgZGVhciwgSSBkb24mIzAzOTt0IGdpdmUgYSBkYW1uLiZxdW90OyIsIlBoaWxhZGVscGhpYSBGbHllcnMiOiJQaGlsYWRlbHBoaWEgRmx5ZXJzIiwiV2VzdHdvcmxkIjoiV2VzdHdvcmxkIiwiMTAwIjoiMTAwIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIkNoaWNhZ28iOiJDaGljYWdvIiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIlB1dG5leSI6IlB1dG5leSIsIkFtYXpvbiI6IkFtYXpvbiIsIlNpeCI6IlNpeCIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiMTAwIE1lZ2F0b25zIjoiMTAwIE1lZ2F0b25zIiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIk9zc2FuIjoiT3NzYW4iLCIxMCI6IjEwIiwiRG9scGhpbiI6IkRvbHBoaW4iLCJUaGUgSmV0cyI6IlRoZSBKZXRzIiwiVGhlIFRvcm5hZG9zIjoiVGhlIFRvcm5hZG9zIiwiUG9wb3BvIjoiUG9wb3BvIiwiQXN0b3JpYSBHcmVlbmdyYXNzIjoiQXN0b3JpYSBHcmVlbmdyYXNzIiwiTW9ybW9uaXNtIjoiTW9ybW9uaXNtIiwiTm9yd2F5IjoiTm9yd2F5IiwiQWlyIjoiQWlyIiwiNyBCb29rcyI6IjcgQm9va3MiLCJBSy00NyI6IkFLLTQ3IiwiVGhlIFVuaXRlZCBLaW5nZG9tIjoiVGhlIFVuaXRlZCBLaW5nZG9tIiwiTXIuIFJvZ2VycyI6Ik1yLiBSb2dlcnMiLCJUaGUgQmVhdGxlcyI6IlRoZSBCZWF0bGVzIiwiTXIuIFBvdGF0byBIZWFkIjoiTXIuIFBvdGF0byBIZWFkIiwiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCI6Ikdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiLCJTdGV2ZW4gU3BpZWxiZXJnIjoiU3RldmVuIFNwaWVsYmVyZyIsIjUwMCI6IjUwMCIsIjE5NjkiOiIxOTY5Iiwic2Vzc2lvbiB0b2tlbiI6IjJlNzYyYmRlZjdiZmFiMGI4ZWViYTBjODE4NmZhMDY2OTA1MDE0OTc3NzYxZGI4ODg1YTE4NjY0ZDQ0YzllOTIiLCJEYW4gTWFyaW5vIjoiRGFuIE1hcmlubyIsIlN1Z2FyIjoiU3VnYXIiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJIYWlyeSI6IkhhaXJ5IiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIkdlYXJib3ggU29mdHdhcmUiOiJHZWFyYm94IFNvZnR3YXJlIiwiRG9sbGFyIEZsdSI6IkRvbGxhciBGbHUiLCJEdWNrIFNvdXAiOiJEdWNrIFNvdXAiLCJIYXRzIjoiSGF0cyIsIlQtODAwIjoiVC04MDAiLCJGaWdhcm8iOiJGaWdhcm8iLCJKb2hubnkgRGVwcCI6IkpvaG5ueSBEZXBwIiwiRm9jdXMiOiJGb2N1cyJ9', '2016-05-30 23:05:58.275928', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:08:25] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 23:08:25.524449' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 23:08:25.524449', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:08:26] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[16/May/2016 23:08:26] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'MzA1YTI4ZjQ5MWFjNzM1Njc1NGEzNmM4NjMxM2FjZjkwNWNjZmNiMzp7InRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiUGVydHVyYmF0b3IiOiJQZXJ0dXJiYXRvciIsIkFLLTQ3IjoiQUstNDciLCJCcmF6aWwiOiJCcmF6aWwiLCJSZWQiOiJSZWQiLCJTdWdhciI6IlN1Z2FyIiwiUG9wb3BvIjoiUG9wb3BvIiwiT2N0b2JlciAyOXRoLCAxOTg4IjoiT2N0b2JlciAyOXRoLCAxOTg4IiwiJnF1b3Q7RnJhbmtseSwgbXkgZGVhciwgSSBkb24mIzAzOTt0IGdpdmUgYSBkYW1uLiZxdW90OyI6IiZxdW90O0ZyYW5rbHksIG15IGRlYXIsIEkgZG9uJiMwMzk7dCBnaXZlIGEgZGFtbi4mcXVvdDsiLCJIZWFydHMiOiJIZWFydHMiLCJNYWRlb24iOiJNYWRlb24iLCJQaGlsYWRlbHBoaWEgRmx5ZXJzIjoiUGhpbGFkZWxwaGlhIEZseWVycyIsIkdlYXJib3ggU29mdHdhcmUiOiJHZWFyYm94IFNvZnR3YXJlIiwiV2VzdHdvcmxkIjoiV2VzdHdvcmxkIiwiMTAwIjoiMTAwIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIkNoaWNhZ28iOiJDaGljYWdvIiwiS2VueWEiOiJLZW55YSIsIkFtYXpvbiI6IkFtYXpvbiIsIlNpeCI6IlNpeCIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiMTAwIE1lZ2F0b25zIjoiMTAwIE1lZ2F0b25zIiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIk9zc2FuIjoiT3NzYW4iLCIxMCI6IjEwIiwiRG9scGhpbiI6IkRvbHBoaW4iLCJUaGUgVG9ybmFkb3MiOiJUaGUgVG9ybmFkb3MiLCJHb2xkU3JjIjoiR29sZFNyYyIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsIk1vcm1vbmlzbSI6Ik1vcm1vbmlzbSIsIk5vcndheSI6Ik5vcndheSIsIkFpciI6IkFpciIsIlB1dG5leSI6IlB1dG5leSIsIjcgQm9va3MiOiI3IEJvb2tzIiwiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCI6Ikdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiLCJNci4gUm9nZXJzIjoiTXIuIFJvZ2VycyIsIlRoZSBCZWF0bGVzIjoiVGhlIEJlYXRsZXMiLCJNci4gUG90YXRvIEhlYWQiOiJNci4gUG90YXRvIEhlYWQiLCJUaGUgVW5pdGVkIEtpbmdkb20iOiJUaGUgVW5pdGVkIEtpbmdkb20iLCJTdGV2ZW4gU3BpZWxiZXJnIjoiU3RldmVuIFNwaWVsYmVyZyIsIjUwMCI6IjUwMCIsIjE5NjkiOiIxOTY5IiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIlQtODAwIjoiVC04MDAiLCJEYW4gTWFyaW5vIjoiRGFuIE1hcmlubyIsIkNseWRlIjoiQ2x5ZGUiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJIYWlyeSI6IkhhaXJ5IiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIlR1ZG9yIjoiVHVkb3IiLCJUaGUgSmV0cyI6IlRoZSBKZXRzIiwiRG9sbGFyIEZsdSI6IkRvbGxhciBGbHUiLCJEdWNrIFNvdXAiOiJEdWNrIFNvdXAiLCJGb2N1cyI6IkZvY3VzIiwic2Vzc2lvbiB0b2tlbiI6IjJlNzYyYmRlZjdiZmFiMGI4ZWViYTBjODE4NmZhMDY2OTA1MDE0OTc3NzYxZGI4ODg1YTE4NjY0ZDQ0YzllOTIiLCJGaWdhcm8iOiJGaWdhcm8iLCJKb2hubnkgRGVwcCI6IkpvaG5ueSBEZXBwIiwiSGF0cyI6IkhhdHMifQ==', "expire_date" = '2016-05-30 23:08:26.084355' WHERE "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'; args=('MzA1YTI4ZjQ5MWFjNzM1Njc1NGEzNmM4NjMxM2FjZjkwNWNjZmNiMzp7InRvdGFsIHF1ZXN0aW9ucyI6IjEiLCJIYXlhbyBNaXlhemFraSI6IkhheWFvIE1peWF6YWtpIiwiUGVydHVyYmF0b3IiOiJQZXJ0dXJiYXRvciIsIkFLLTQ3IjoiQUstNDciLCJCcmF6aWwiOiJCcmF6aWwiLCJSZWQiOiJSZWQiLCJTdWdhciI6IlN1Z2FyIiwiUG9wb3BvIjoiUG9wb3BvIiwiT2N0b2JlciAyOXRoLCAxOTg4IjoiT2N0b2JlciAyOXRoLCAxOTg4IiwiJnF1b3Q7RnJhbmtseSwgbXkgZGVhciwgSSBkb24mIzAzOTt0IGdpdmUgYSBkYW1uLiZxdW90OyI6IiZxdW90O0ZyYW5rbHksIG15IGRlYXIsIEkgZG9uJiMwMzk7dCBnaXZlIGEgZGFtbi4mcXVvdDsiLCJIZWFydHMiOiJIZWFydHMiLCJNYWRlb24iOiJNYWRlb24iLCJQaGlsYWRlbHBoaWEgRmx5ZXJzIjoiUGhpbGFkZWxwaGlhIEZseWVycyIsIkdlYXJib3ggU29mdHdhcmUiOiJHZWFyYm94IFNvZnR3YXJlIiwiV2VzdHdvcmxkIjoiV2VzdHdvcmxkIiwiMTAwIjoiMTAwIiwiQ29sZCBXYXIiOiJDb2xkIFdhciIsIkNoaWNhZ28iOiJDaGljYWdvIiwiS2VueWEiOiJLZW55YSIsIkFtYXpvbiI6IkFtYXpvbiIsIlNpeCI6IlNpeCIsIjEwIHllYXJzIGluIHByaXNvbiBhbmQgYSBmaW5lIG9mICQ1MCwwMDAiOiIxMCB5ZWFycyBpbiBwcmlzb24gYW5kIGEgZmluZSBvZiAkNTAsMDAwIiwiMTAwIE1lZ2F0b25zIjoiMTAwIE1lZ2F0b25zIiwiUmVkIExpb24iOiJSZWQgTGlvbiIsIk9zc2FuIjoiT3NzYW4iLCIxMCI6IjEwIiwiRG9scGhpbiI6IkRvbHBoaW4iLCJUaGUgVG9ybmFkb3MiOiJUaGUgVG9ybmFkb3MiLCJHb2xkU3JjIjoiR29sZFNyYyIsIkFzdG9yaWEgR3JlZW5ncmFzcyI6IkFzdG9yaWEgR3JlZW5ncmFzcyIsIk1vcm1vbmlzbSI6Ik1vcm1vbmlzbSIsIk5vcndheSI6Ik5vcndheSIsIkFpciI6IkFpciIsIlB1dG5leSI6IlB1dG5leSIsIjcgQm9va3MiOiI3IEJvb2tzIiwiR29vZGJ5ZSBZZWxsb3cgQnJpY2sgUm9hZCI6Ikdvb2RieWUgWWVsbG93IEJyaWNrIFJvYWQiLCJNci4gUm9nZXJzIjoiTXIuIFJvZ2VycyIsIlRoZSBCZWF0bGVzIjoiVGhlIEJlYXRsZXMiLCJNci4gUG90YXRvIEhlYWQiOiJNci4gUG90YXRvIEhlYWQiLCJUaGUgVW5pdGVkIEtpbmdkb20iOiJUaGUgVW5pdGVkIEtpbmdkb20iLCJTdGV2ZW4gU3BpZWxiZXJnIjoiU3RldmVuIFNwaWVsYmVyZyIsIjUwMCI6IjUwMCIsIjE5NjkiOiIxOTY5IiwiSG9nYXJ0aCBIdWdoZXMiOiJIb2dhcnRoIEh1Z2hlcyIsIlQtODAwIjoiVC04MDAiLCJEYW4gTWFyaW5vIjoiRGFuIE1hcmlubyIsIkNseWRlIjoiQ2x5ZGUiLCJCaWcgRGFkZHkiOiJCaWcgRGFkZHkiLCJIYWlyeSI6IkhhaXJ5IiwiV2F0ZXJsb28iOiJXYXRlcmxvbyIsIlR1ZG9yIjoiVHVkb3IiLCJUaGUgSmV0cyI6IlRoZSBKZXRzIiwiRG9sbGFyIEZsdSI6IkRvbGxhciBGbHUiLCJEdWNrIFNvdXAiOiJEdWNrIFNvdXAiLCJGb2N1cyI6IkZvY3VzIiwic2Vzc2lvbiB0b2tlbiI6IjJlNzYyYmRlZjdiZmFiMGI4ZWViYTBjODE4NmZhMDY2OTA1MDE0OTc3NzYxZGI4ODg1YTE4NjY0ZDQ0YzllOTIiLCJGaWdhcm8iOiJGaWdhcm8iLCJKb2hubnkgRGVwcCI6IkpvaG5ueSBEZXBwIiwiSGF0cyI6IkhhdHMifQ==', '2016-05-30 23:08:26.084355', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')
+[16/May/2016 23:16:27] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-05-16 23:16:27.192049' AND "django_session"."session_key" = 'mgba3smys2h2tqr61u09x0l1r6at6w8h'); args=('2016-05-16 23:16:27.192049', 'mgba3smys2h2tqr61u09x0l1r6at6w8h')

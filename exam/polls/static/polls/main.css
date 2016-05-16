@@ -1,0 +1,13 @@
+body {
+   background-color: #123552;
+}
+
+#theBox {
+    background-color: #718DA5;
+    margin: 5px;
+    padding: 15px;
+    border-style: solid;
+    border-color: white;
+}
+
+
